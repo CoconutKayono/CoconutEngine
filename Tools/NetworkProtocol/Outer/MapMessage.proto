@@ -1,0 +1,85 @@
+syntax = "proto3";
+package Fantasy.Network.Message;
+
+message Vec3
+{
+	float X = 1;
+	float Y = 2;
+	float Z = 3;
+}
+
+/// Gate 建立 Map 漫游（单 Session，KCP 连 Gate）
+message C2G_ConnectRoamingRequest // IRequest,G2C_ConnectRoamingResponse
+{
+}
+
+message G2C_ConnectRoamingResponse // IResponse
+{
+}
+
+/// 进入 Map 战斗房
+message C2M_EnterMapRequest // IRoamingRequest,M2C_EnterMapResponse,MapRoamingType
+{
+	int32 MapId = 1;
+}
+
+message M2C_EnterMapResponse // IRoamingResponse
+{
+}
+
+/// 客户端上报编队前台 Transform（AI 用）
+message C2M_SyncFrontRole // IRoamingMessage,MapRoamingType
+{
+	Vec3 Position = 1;
+	float RotY = 2;
+}
+
+/// 客户端 HitBox 上报怪物伤害
+message C2M_MonsterTakeDamageRequest // IRoamingRequest,M2C_MonsterTakeDamageResponse,MapRoamingType
+{
+	int32 MonsterId = 1;
+	int32 HitId = 2;
+	float Damage = 3;
+}
+
+message M2C_MonsterTakeDamageResponse // IRoamingResponse
+{
+	int32 MonsterId = 1;
+	double Hp = 2;
+}
+
+/// Map 推送：怪物生成
+message M2C_MonsterSpawn // IRoamingMessage,MapRoamingType
+{
+	int32 MonsterId = 1;
+	int32 ConfigId = 2;
+	Vec3 Position = 3;
+	float RotY = 4;
+	double Hp = 5;
+	double MaxHp = 6;
+}
+
+/// Map 推送：怪物状态同步
+message M2C_MonsterSync // IRoamingMessage,MapRoamingType
+{
+	int32 MonsterId = 1;
+	Vec3 Position = 2;
+	float RotY = 3;
+	double Hp = 4;
+}
+
+/// Map 推送：怪物播动作
+message M2C_MonsterPlayAction // IRoamingMessage,MapRoamingType
+{
+	int32 MonsterId = 1;
+	string ActionName = 2;
+}
+
+/// Map 推送：怪物命中前台角色
+message M2C_MonsterAttackRole // IRoamingMessage,MapRoamingType
+{
+	int32 MonsterId = 1;
+	int32 HitId = 2;
+	float Damage = 3;
+	Vec3 HitPoint = 4;
+}

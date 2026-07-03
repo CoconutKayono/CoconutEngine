@@ -1,0 +1,18 @@
+{
+  "actionName": "Skill_B",
+  "duration": 1.4,
+  "isLoop": false,
+  "moveSpeed": 0,
+  "hitBoxes": [
+    {
+      "hitId": 1002,
+      "start": 0.3,
+      "end": 0.55,
+      "shape": "Sphere",
+      "centerX": 0,
+      "centerY": 1.0,
+      "centerZ": 1.0,
+      "radius": 1.6
+    }
+  ]
+}

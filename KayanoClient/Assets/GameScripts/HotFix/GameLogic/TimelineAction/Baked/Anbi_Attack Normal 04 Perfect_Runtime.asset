@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Attack Normal 04 Perfect_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 1013
+  actionName: Attack Normal 04 Perfect
+  primaryIntent: 8
+  isLoop: 0
+  enableRotation: 0
+  enableRecenter: 0
+  enableLookAtMonster: 1
+  clip: {fileID: 1827226128182048838, guid: 37f8356fc1834294a8a527f401002876, type: 3}
+  inheritActionName: Attack Normal 01
+  finishTransition:
+    actionName: Attack Normal 04 Perfect End
+    fadeDuration: 0
+  intentTransitions: []
+  signalTransitions: []
+  notifies: []
+  notifyStates: []

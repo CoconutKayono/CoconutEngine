@@ -1,0 +1,566 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: TEngine.Runtime::TEngine.Localization.LanguageSourceAsset
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: UI/Config/Audio/Music
+      TermType: 0
+      Description: 
+      Languages:
+      - Music
+      - "\u97F3\u4E50"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Audio/Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - "\u97F3\u6548"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Audio/UISound
+      TermType: 0
+      Description: 
+      Languages:
+      - UI Sound
+      - "UI\u97F3\u6548"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Audio/Voice
+      TermType: 0
+      Description: 
+      Languages:
+      - Voice
+      - "\u8BED\u97F3"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Back
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - "\u8FD4\u56DE"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Common/Mute
+      TermType: 0
+      Description: 
+      Languages:
+      - Mute
+      - "\u9759\u97F3"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Attack
+      TermType: 0
+      Description: 
+      Languages:
+      - Attack
+      - "\u666E\u901A\u653B\u51FB"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Evade
+      TermType: 0
+      Description: 
+      Languages:
+      - Evade
+      - "\u95EA\u907F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Hint
+      TermType: 0
+      Description: 
+      Languages:
+      - Keyboard bindings only. Conflicts swap automatically.
+      - "\u4EC5\u652F\u6301\u952E\u76D8\u7ED1\u5B9A\uFF0C\u51B2\u7A81\u65F6\u81EA\u52A8\u4EA4\u6362\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Listening
+      TermType: 0
+      Description: 
+      Languages:
+      - Press a key...
+      - "\u8BF7\u6309\u6309\u952E..."
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Next
+      TermType: 0
+      Description: 
+      Languages:
+      - Switch Next
+      - "\u5207\u6362\u4E0B\u4E00\u4F4D"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Previous
+      TermType: 0
+      Description: 
+      Languages:
+      - Switch Previous
+      - "\u5207\u6362\u4E0A\u4E00\u4F4D"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/RadialMenu
+      TermType: 0
+      Description: 
+      Languages:
+      - Radial Menu
+      - "\u8F6E\u76D8\u83DC\u5355"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Rebind
+      TermType: 0
+      Description: 
+      Languages:
+      - Rebind
+      - "\u6539\u952E"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/RebindCanceled
+      TermType: 0
+      Description: 
+      Languages:
+      - Rebind canceled.
+      - "\u6539\u952E\u5DF2\u53D6\u6D88\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/SpecialAttack
+      TermType: 0
+      Description: 
+      Languages:
+      - Special Attack
+      - "\u7279\u6B8A\u653B\u51FB"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Controls/Ultimate
+      TermType: 0
+      Description: 
+      Languages:
+      - Ultimate
+      - "\u7EC8\u6781\u6280\u80FD"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Language/Chinese
+      TermType: 0
+      Description: 
+      Languages:
+      - Chinese
+      - "\u7B80\u4F53\u4E2D\u6587"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Language/English
+      TermType: 0
+      Description: 
+      Languages:
+      - English
+      - "\u82F1\u8BED"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Language/Label
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - "\u8BED\u8A00"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Nav/Audio
+      TermType: 0
+      Description: 
+      Languages:
+      - Audio
+      - "\u97F3\u9891"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Nav/Controls
+      TermType: 0
+      Description: 
+      Languages:
+      - Controls
+      - "\u63A7\u5236"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Nav/Display
+      TermType: 0
+      Description: 
+      Languages:
+      - Display
+      - "\u663E\u793A"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Nav/Story
+      TermType: 0
+      Description: 
+      Languages:
+      - Story
+      - "\u5267\u60C5"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Nav/System
+      TermType: 0
+      Description: 
+      Languages:
+      - System
+      - "\u7CFB\u7EDF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Nav/Text
+      TermType: 0
+      Description: 
+      Languages:
+      - Text
+      - "\u6587\u672C"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Page/Audio
+      TermType: 0
+      Description: 
+      Languages:
+      - Audio
+      - "\u97F3\u9891"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Page/Controls
+      TermType: 0
+      Description: 
+      Languages:
+      - Controls
+      - "\u63A7\u5236"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Page/Display
+      TermType: 0
+      Description: 
+      Languages:
+      - Display
+      - "\u663E\u793A"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Page/Story
+      TermType: 0
+      Description: 
+      Languages:
+      - Story
+      - "\u5267\u60C5"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Page/System
+      TermType: 0
+      Description: 
+      Languages:
+      - System
+      - "\u7CFB\u7EDF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Page/Text
+      TermType: 0
+      Description: 
+      Languages:
+      - Text
+      - "\u6587\u672C"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Reset
+      TermType: 0
+      Description: 
+      Languages:
+      - Reset
+      - "\u91CD\u7F6E"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Config/Title
+      TermType: 0
+      Description: 
+      Languages:
+      - Settings
+      - "\u8BBE\u7F6E"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/MainMenu/CGList
+      TermType: 0
+      Description: 
+      Languages:
+      - Gallery
+      - "\u753B\u5ECA"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/MainMenu/Config
+      TermType: 0
+      Description: 
+      Languages:
+      - Settings
+      - "\u8BBE\u7F6E"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/MainMenu/End
+      TermType: 0
+      Description: 
+      Languages:
+      - End
+      - "\u7ED3\u675F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/MainMenu/Load
+      TermType: 0
+      Description: 
+      Languages:
+      - Load
+      - "\u52A0\u8F7D"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/MainMenu/Room
+      TermType: 0
+      Description: 
+      Languages:
+      - Room
+      - "\u623F\u95F4"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/MainMenu/Start
+      TermType: 0
+      Description: 
+      Languages:
+      - Start
+      - "\u5F00\u59CB"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Audio/MusicVolume
+      TermType: 0
+      Description: 
+      Languages:
+      - Music Volume
+      - "\u97F3\u4E50\u97F3\u91CF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Audio/SoundVolume
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound Volume
+      - "\u97F3\u6548\u97F3\u91CF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Audio/UISoundVolume
+      TermType: 0
+      Description: 
+      Languages:
+      - UI Volume
+      - "UI\u97F3\u91CF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Audio/VoiceVolume
+      TermType: 0
+      Description: 
+      Languages:
+      - Voice Volume
+      - "\u4EBA\u58F0\u97F3\u91CF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/DisplayMode
+      TermType: 0
+      Description: 
+      Languages:
+      - Display Mode
+      - "\u663E\u793A\u6A21\u5F0F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/DisplayMode/Borderless
+      TermType: 0
+      Description: 
+      Languages:
+      - Borderless Fullscreen
+      - "\u65E0\u8FB9\u6846\u5168\u5C4F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/DisplayMode/Fullscreen
+      TermType: 0
+      Description: 
+      Languages:
+      - Fullscreen
+      - "\u5168\u5C4F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/DisplayMode/Windowed
+      TermType: 0
+      Description: 
+      Languages:
+      - Windowed
+      - "\u7A97\u53E3\u6A21\u5F0F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/FrameRate
+      TermType: 0
+      Description: 
+      Languages:
+      - Frame Rate
+      - "\u5E27\u7387"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/FrameRate/120
+      TermType: 0
+      Description: 
+      Languages:
+      - 120
+      - 120
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/FrameRate/30
+      TermType: 0
+      Description: 
+      Languages:
+      - 30
+      - 30
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Display/FrameRate/60
+      TermType: 0
+      Description: 
+      Languages:
+      - 60
+      - 60
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Nav/Graphics
+      TermType: 0
+      Description: 
+      Languages:
+      - Graphics
+      - "\u753B\u9762"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Nav/KeyMouse
+      TermType: 0
+      Description: 
+      Languages:
+      - Key & Mouse
+      - "\u952E\u9F20"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Nav/Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - "\u58F0\u97F3"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Nav/System
+      TermType: 0
+      Description: 
+      Languages:
+      - System
+      - "\u7CFB\u7EDF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Page/Graphics
+      TermType: 0
+      Description: 
+      Languages:
+      - Graphics
+      - "\u753B\u9762"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Page/KeyMouse
+      TermType: 0
+      Description: 
+      Languages:
+      - Key & Mouse
+      - "\u952E\u9F20"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Page/Sound
+      TermType: 0
+      Description: 
+      Languages:
+      - Sound
+      - "\u58F0\u97F3"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Page/System
+      TermType: 0
+      Description: 
+      Languages:
+      - System
+      - "\u7CFB\u7EDF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/System/Language
+      TermType: 0
+      Description: 
+      Languages:
+      - Language
+      - "\u8BED\u8A00"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/System/Language/ChineseSimplified
+      TermType: 0
+      Description: 
+      Languages:
+      - Simplified Chinese
+      - "\u7B80\u4F53\u4E2D\u6587"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/System/Language/English
+      TermType: 0
+      Description: 
+      Languages:
+      - English
+      - "\u82F1\u8BED"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Window/Home
+      TermType: 0
+      Description: 
+      Languages:
+      - Home
+      - "\u4E3B\u9875"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: UI/Setting/Window/RestoreDefaults
+      TermType: 0
+      Description: 
+      Languages:
+      - Restore Defaults
+      - "\u6062\u590D\u9ED8\u8BA4"
+      Flags: 0000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: '-'
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: Chinese
+      Code: zh-CN
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: 
+    Google_SpreadsheetKey: 
+    Google_SpreadsheetName: 
+    Google_LastUpdatedVersion: 
+    Google_Password: change_this
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: AssetRaw/Configs/Localization.csv
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1
+    Spreadsheet_SortRows: 1

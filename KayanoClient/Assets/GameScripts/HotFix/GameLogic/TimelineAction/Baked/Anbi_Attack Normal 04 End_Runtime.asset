@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Attack Normal 04 End_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 10041
+  actionName: Attack Normal 04 End
+  primaryIntent: 0
+  isLoop: 0
+  enableRotation: 0
+  enableRecenter: 0
+  enableLookAtMonster: 1
+  clip: {fileID: 1827226128182048838, guid: f0d3b14a2d3c72248842605a9af5e992, type: 3}
+  inheritActionName: Attack Normal 01 End
+  finishTransition:
+    actionName: Idle
+    fadeDuration: 0
+  intentTransitions: []
+  signalTransitions: []
+  notifies: []
+  notifyStates:
+  - {fileID: 8928133621859534402}
+--- !u!114 &8928133621859534402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.950_0.630
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.95
+  length: 0.6297959
+  clips:
+  - {fileID: 8300000, guid: 2eb0e25f8b7e9ec40a17a8a8d9f8a069, type: 3}
+  dontPlayProbability: 0

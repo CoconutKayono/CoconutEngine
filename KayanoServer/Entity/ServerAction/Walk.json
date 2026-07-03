@@ -1,0 +1,8 @@
+﻿{
+  "actionName": "Walk",
+  "duration": 0.5333334,
+  "isLoop": true,
+  "moveSpeed": 0,
+  "hitBoxes": [
+  ]
+}

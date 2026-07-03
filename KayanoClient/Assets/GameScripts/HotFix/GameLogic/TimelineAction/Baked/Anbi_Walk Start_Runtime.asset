@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3867411584069570449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.400_0.049
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.4
+  length: 0.04888889
+  clips:
+  - {fileID: 8300000, guid: a7d39bb78dd35ed438aa29d107294902, type: 3}
+  dontPlayProbability: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Walk Start_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 1000
+  actionName: Walk Start
+  primaryIntent: 1
+  isLoop: 0
+  enableRotation: 1
+  enableRecenter: 1
+  enableLookAtMonster: 0
+  clip: {fileID: 1827226128182048838, guid: 16321706935ce3c4f8186a0d70cb5fd9, type: 3}
+  inheritActionName: 
+  finishTransition:
+    actionName: Walk
+    fadeDuration: 0
+  intentTransitions:
+  - actionName: Run End
+    fadeDuration: 0.25
+    intent: 0
+    openTime: 0
+  - actionName: Attack Normal 01
+    fadeDuration: 0
+    intent: 8
+    openTime: 0
+  - actionName: Evade Front
+    fadeDuration: 0
+    intent: 2
+    openTime: 0
+  - actionName: Evade Back
+    fadeDuration: 0
+    intent: 4
+    openTime: 0
+  signalTransitions: []
+  notifies: []
+  notifyStates:
+  - {fileID: -3867411584069570449}

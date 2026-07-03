@@ -1,0 +1,1253 @@
+{
+    "FileVersion": "2025.9.30",
+    "EnableAddressable": true,
+    "SupportExtensionless": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "ReplaceAssetPathWithAddress": false,
+    "OutputNameStyle": 2,
+    "BuildBundleType": 2,
+    "BuildPipeline": "ScriptableBuildPipeline",
+    "PackageName": "DefaultPackage",
+    "PackageVersion": "2026-06-20-1320",
+    "PackageNote": "2026/6/20 22:00:42",
+    "AssetList": [
+        {
+            "Address": "Cube",
+            "AssetPath": "Assets/AssetRaw/Actor/Cube.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "my most precious treasure (Orgel Version)",
+            "AssetPath": "Assets/AssetRaw/Audios/my most precious treasure (Orgel Version).mp3",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ui_menu_select",
+            "AssetPath": "Assets/AssetRaw/Audios/ui_menu_select.wav",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 1,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "item_tbitem",
+            "AssetPath": "Assets/AssetRaw/Configs/bytes/item_tbitem.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 3,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "DefaultMenuStyle",
+            "AssetPath": "Assets/AssetRaw/Configs/DefaultMenuStyle.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                6,
+                41
+            ]
+        },
+        {
+            "Address": "Localization",
+            "AssetPath": "Assets/AssetRaw/Configs/Localization.csv",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 2,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "CustomPostProcessData",
+            "AssetPath": "Assets/AssetRaw/Configs/URP/CustomPostProcessData.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "Default Universal Render Pipeline Asset",
+            "AssetPath": "Assets/AssetRaw/Configs/URP/Default Universal Render Pipeline Asset.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": [
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "Address": "Default Universal Render Pipeline Asset_Renderer",
+            "AssetPath": "Assets/AssetRaw/Configs/URP/Default Universal Render Pipeline Asset_Renderer.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": [
+                34,
+                35,
+                37,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "Address": "Default Universal Renderer Data",
+            "AssetPath": "Assets/AssetRaw/Configs/URP/Default Universal Renderer Data.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 4,
+            "DependBundleIDs": [
+                34,
+                35,
+                37,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "Address": "GameLogic.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameLogic.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "GameProto.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/GameProto.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "mscorlib.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/mscorlib.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "System.Core.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.Core.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "System.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/System.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "TEngine.Runtime.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/TEngine.Runtime.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UniTask.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/UniTask.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UnityEngine.CoreModule.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/UnityEngine.CoreModule.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "YooAsset.dll",
+            "AssetPath": "Assets/AssetRaw/DLL/YooAsset.dll.bytes",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 5,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "LXGWWenKai-Medium SDF",
+            "AssetPath": "Assets/AssetRaw/Fonts/LXGWWenKai-Medium SDF.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "LXGWWenKai-Medium",
+            "AssetPath": "Assets/AssetRaw/Fonts/LXGWWenKai-Medium.ttf",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "QingSongShouXieTi1-2 SDF",
+            "AssetPath": "Assets/AssetRaw/Fonts/QingSongShouXieTi1-2 SDF.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "QingSongShouXieTi1-2",
+            "AssetPath": "Assets/AssetRaw/Fonts/QingSongShouXieTi1-2.ttf",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "SourceHanSerifCN-Medium-6 SDF",
+            "AssetPath": "Assets/AssetRaw/Fonts/SourceHanSerifCN-Medium-6 SDF.asset",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "SourceHanSerifCN-Medium-6",
+            "AssetPath": "Assets/AssetRaw/Fonts/SourceHanSerifCN-Medium-6.otf",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 6,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "Plane",
+            "AssetPath": "Assets/AssetRaw/Materials/Plane.mat",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 7,
+            "DependBundleIDs": [
+                33,
+                41
+            ]
+        },
+        {
+            "Address": "GameScene",
+            "AssetPath": "Assets/AssetRaw/Scenes/GameScene.unity",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 8,
+            "DependBundleIDs": [
+                7,
+                33,
+                41
+            ]
+        },
+        {
+            "Address": "BattleMainUI",
+            "AssetPath": "Assets/AssetRaw/UI/BattleMainUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 9,
+            "DependBundleIDs": [
+                30,
+                41
+            ]
+        },
+        {
+            "Address": "UI_BtnAction_Highlight",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_BtnAction_Highlight.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 10,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_BtnAction_Normal",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_BtnAction_Normal.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 11,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_BtnCancel_Normal",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_BtnCancel_Normal.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 12,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_BtnClose_Hover",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_BtnClose_Hover.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 13,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_BtnClose_Normal",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_BtnClose_Normal.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 14,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_BtnConfirm_Normal",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_BtnConfirm_Normal.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 15,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_DialogPanel_Parchment",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_DialogPanel_Parchment.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 16,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipBtnAction_Highlight",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipBtnAction_Highlight.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 17,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipBtnAction_Normal",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipBtnAction_Normal.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 18,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipBtnCancel",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipBtnCancel.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 19,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipBtnClose_Hover",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipBtnClose_Hover.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 20,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipBtnClose_Normal",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipBtnClose_Normal.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 21,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipBtnConfirm",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipBtnConfirm.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 22,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "UI_TipPanel_Small_Dark",
+            "AssetPath": "Assets/AssetRaw/UI/Common/UI_TipPanel_Small_Dark.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 23,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ConfigUI",
+            "AssetPath": "Assets/AssetRaw/UI/ConfigUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 24,
+            "DependBundleIDs": [
+                6,
+                28,
+                31,
+                41
+            ]
+        },
+        {
+            "Address": "DialogUI",
+            "AssetPath": "Assets/AssetRaw/UI/DialogUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 25,
+            "DependBundleIDs": [
+                16
+            ]
+        },
+        {
+            "Address": "LoginUI",
+            "AssetPath": "Assets/AssetRaw/UI/LoginUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 26,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "MainMenuUI",
+            "AssetPath": "Assets/AssetRaw/UI/MainMenuUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 27,
+            "DependBundleIDs": [
+                6,
+                31,
+                41
+            ]
+        },
+        {
+            "Address": "SettingVolumeRow",
+            "AssetPath": "Assets/AssetRaw/UI/SettingVolumeRow.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 28,
+            "DependBundleIDs": [
+                6,
+                41
+            ]
+        },
+        {
+            "Address": "TestUI",
+            "AssetPath": "Assets/AssetRaw/UI/TestUI.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 29,
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "Address": "Play_Joystick_bg",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/Play_Joystick_bg.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Play_Joystick_handle",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/Play_Joystick_handle.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Fill_Blue",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/Slider11_Fill_Blue.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Fill_Red",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/Slider11_Fill_Red.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Fill_Yellow",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/Slider11_Fill_Yellow.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "Slider11_Frame",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/Slider11_Frame.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "zd_img_light",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Atlas/Battle/zd_img_light.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 30,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "CGListUI_bg_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/CGListUI_bg_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "CGListUI_bg_simple_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/CGListUI_bg_simple_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ConfigUI_bg_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/ConfigUI_bg_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ConfigUI_bg_simple_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/ConfigUI_bg_simple_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ConfigUI_bg_simple_v2_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/ConfigUI_bg_simple_v2_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "LoadUI_bg_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/LoadUI_bg_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "LoadUI_bg_simple_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/LoadUI_bg_simple_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_2560x1920",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_2560x1920.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_2560x1920",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_2560x1920.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_medium",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_medium.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_medium_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_medium_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_medium_2560x1920",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_medium_2560x1920.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_subtle",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_subtle.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_subtle_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_subtle_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_alt_decor_subtle_2560x1920",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_alt_decor_subtle_2560x1920.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_no_vines_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_no_vines_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_bg_no_vines_2560x1920",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_bg_no_vines_2560x1920.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_character_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_character_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_character_2560x1920",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_character_2560x1920.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_title_lingluo",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_title_lingluo.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_title_lingluo_color_crimson_transparent",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_title_lingluo_color_crimson_transparent.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_title_lingluo_color_forest_transparent",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_title_lingluo_color_forest_transparent.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_title_lingluo_color_ghost_transparent",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_title_lingluo_color_ghost_transparent.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_title_lingluo_color_moonlight_transparent",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_title_lingluo_color_moonlight_transparent.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "MainMenuUI_title_lingluo_v2",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/MainMenuUI_title_lingluo_v2.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "RoomUI_bg_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/RoomUI_bg_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "RoomUI_bg_simple_2560x1440",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/RoomUI_bg_simple_2560x1440.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "ui-mainmenu-background",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/BackGround/ui-mainmenu-background.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 31,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "toggle_box_outline",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/UI/toggle_box_outline.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 32,
+            "DependBundleIDs": []
+        },
+        {
+            "Address": "toggle_checkmark",
+            "AssetPath": "Assets/AssetRaw/UIRaw/Raw/UI/toggle_checkmark.png",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 32,
+            "DependBundleIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "defaultpackage_assets_assetraw_actor.bundle",
+            "UnityCRC": 3429043674,
+            "FileHash": "0f187e21ab8f45f8a07afa4d4736cb34",
+            "FileCRC": 3847941890,
+            "FileSize": 3355,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_audios.bundle",
+            "UnityCRC": 1696850732,
+            "FileHash": "11be2190a2074c11ecb212465f172f33",
+            "FileCRC": 2899599824,
+            "FileSize": 2163127,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs.bundle",
+            "UnityCRC": 1495964812,
+            "FileHash": "8fbb1f1a819f75ff7ff8c39784cae000",
+            "FileCRC": 2739423698,
+            "FileSize": 3014,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                6,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs_bytes.bundle",
+            "UnityCRC": 594854275,
+            "FileHash": "4b83535a3a59897e5e3b92d4411daabe",
+            "FileCRC": 928675443,
+            "FileSize": 1540,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_configs_urp.bundle",
+            "UnityCRC": 3964749774,
+            "FileHash": "4368e9aa026faddc9c43c15a76850652",
+            "FileCRC": 229525778,
+            "FileSize": 6720,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                34,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_dll.bundle",
+            "UnityCRC": 403026618,
+            "FileHash": "536a7d2b75c23dfdca85a5ec8b8e2bf7",
+            "FileCRC": 2637097085,
+            "FileSize": 2862601,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_fonts.bundle",
+            "UnityCRC": 342785380,
+            "FileHash": "439b972a00e241ce1973671be445c1fc",
+            "FileCRC": 226470291,
+            "FileSize": 30501743,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_materials.bundle",
+            "UnityCRC": 1868951572,
+            "FileHash": "bd6692a19d5d643e197c2e6342e06be2",
+            "FileCRC": 2444876599,
+            "FileSize": 2744,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                33,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_scenes.bundle",
+            "UnityCRC": 3211708726,
+            "FileHash": "1a478f05b793aa5103c40a5cfd061120",
+            "FileCRC": 2929018315,
+            "FileSize": 8986,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                7,
+                33,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_battlemainui.bundle",
+            "UnityCRC": 3398617699,
+            "FileHash": "deeef6e7630400539edf67f7b4994c66",
+            "FileCRC": 4004392281,
+            "FileSize": 10844,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                30,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_btnaction_highlight.bundle",
+            "UnityCRC": 504389695,
+            "FileHash": "9ce9b82a08f4f8b180b224b2cb54969d",
+            "FileCRC": 2788501920,
+            "FileSize": 275347,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_btnaction_normal.bundle",
+            "UnityCRC": 3094936297,
+            "FileHash": "2dac865b704758dc187e6f0f111e824f",
+            "FileCRC": 1212170522,
+            "FileSize": 246369,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_btncancel_normal.bundle",
+            "UnityCRC": 3132801253,
+            "FileHash": "d1938597cdf72c1afae6699336c1e056",
+            "FileCRC": 3495807986,
+            "FileSize": 278833,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_btnclose_hover.bundle",
+            "UnityCRC": 357707614,
+            "FileHash": "f124733335afd0fe71e3e475cf520468",
+            "FileCRC": 2159405984,
+            "FileSize": 334801,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_btnclose_normal.bundle",
+            "UnityCRC": 3062314893,
+            "FileHash": "09952af07ec7f72e4b3102553c2d5673",
+            "FileCRC": 1542435401,
+            "FileSize": 327538,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_btnconfirm_normal.bundle",
+            "UnityCRC": 2573165672,
+            "FileHash": "569dec789428ceec3cc81d1b424bcc8e",
+            "FileCRC": 3377827099,
+            "FileSize": 276122,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_dialogpanel_parchment.bundle",
+            "UnityCRC": 2689905596,
+            "FileHash": "7e015a311f81f8665f302769a1af6591",
+            "FileCRC": 831479645,
+            "FileSize": 445088,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tipbtnaction_highlight.bundle",
+            "UnityCRC": 2730413366,
+            "FileHash": "37ee507fd43aa1ee93d8280bed964b7d",
+            "FileCRC": 383399744,
+            "FileSize": 216198,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tipbtnaction_normal.bundle",
+            "UnityCRC": 1855966696,
+            "FileHash": "4e0982a79176fdd56ec420f22ec423a2",
+            "FileCRC": 1619117581,
+            "FileSize": 202012,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tipbtncancel.bundle",
+            "UnityCRC": 424721094,
+            "FileHash": "a2aece2f641a5bce8d7e5cf85379c0ba",
+            "FileCRC": 1807397998,
+            "FileSize": 263948,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tipbtnclose_hover.bundle",
+            "UnityCRC": 2029089860,
+            "FileHash": "dbade89da61a4ba4882769708208ef8b",
+            "FileCRC": 219028492,
+            "FileSize": 324199,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tipbtnclose_normal.bundle",
+            "UnityCRC": 1797390500,
+            "FileHash": "df44fd9e15c940b07f7a909d40beeb96",
+            "FileCRC": 3462681389,
+            "FileSize": 177080,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tipbtnconfirm.bundle",
+            "UnityCRC": 1294886549,
+            "FileHash": "8263c5cbc8b99e54645cad5323870dba",
+            "FileCRC": 2783789957,
+            "FileSize": 254699,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_common_ui_tippanel_small_dark.bundle",
+            "UnityCRC": 1913338923,
+            "FileHash": "78e219cd0552be0e6fa464b656669c5c",
+            "FileCRC": 3453252681,
+            "FileSize": 373348,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_configui.bundle",
+            "UnityCRC": 2240394419,
+            "FileHash": "8c264b2903a1bcf428200151002afcd3",
+            "FileCRC": 4170421150,
+            "FileSize": 24653,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                6,
+                31,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_dialogui.bundle",
+            "UnityCRC": 2723120125,
+            "FileHash": "6d711ab6c61276de372d9e7507dd76ef",
+            "FileCRC": 2256274126,
+            "FileSize": 4762,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                16
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_loginui.bundle",
+            "UnityCRC": 3181326842,
+            "FileHash": "102f3ed6b67877529904adb2309c8265",
+            "FileCRC": 2100879159,
+            "FileSize": 8442,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_mainmenuui.bundle",
+            "UnityCRC": 417571968,
+            "FileHash": "8f64af0a285522cef545647001021cba",
+            "FileCRC": 2328663957,
+            "FileSize": 11722,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                6,
+                31,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_settingvolumerow.bundle",
+            "UnityCRC": 4238828115,
+            "FileHash": "3b5ff1a86080523d94b4cacc9c4f6135",
+            "FileCRC": 901510691,
+            "FileSize": 9922,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                6,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_ui_testui.bundle",
+            "UnityCRC": 3835900582,
+            "FileHash": "7532c61def18a790d146c35cc3a9aa23",
+            "FileCRC": 2494478255,
+            "FileSize": 4078,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_atlas_battle.bundle",
+            "UnityCRC": 3408824153,
+            "FileHash": "b5bde4105fe7cab7de30f88e9e99f2dd",
+            "FileCRC": 2323316396,
+            "FileSize": 36782,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_raw_background.bundle",
+            "UnityCRC": 586327411,
+            "FileHash": "92d28c3a815ebf16801e50fbbcc41348",
+            "FileCRC": 1917047280,
+            "FileSize": 21457165,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_assets_assetraw_uiraw_raw_ui.bundle",
+            "UnityCRC": 1440903713,
+            "FileHash": "c150d6142e36ac2560021dfac23c6ce5",
+            "FileCRC": 911181411,
+            "FileSize": 6582,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_assets_assetraw_textures_floor.bundle",
+            "UnityCRC": 4014057278,
+            "FileHash": "d0c1daac7f41ec419f6bc9d147a5cd9f",
+            "FileCRC": 4236693405,
+            "FileSize": 211394,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_runtime_data.bundle",
+            "UnityCRC": 2441567990,
+            "FileHash": "7a25e1c8d77cb7866de7d30269e0a261",
+            "FileCRC": 2779269086,
+            "FileSize": 3746,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": [
+                37,
+                39,
+                40,
+                41
+            ]
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_shaders_debug.bundle",
+            "UnityCRC": 1337414,
+            "FileHash": "0e7430825ec1f27c206c6ef06e6c59c2",
+            "FileCRC": 2484317639,
+            "FileSize": 3259,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_textures.bundle",
+            "UnityCRC": 2202125217,
+            "FileHash": "21e359e70aa3fd11de6e5eb886986bfc",
+            "FileCRC": 335495855,
+            "FileSize": 2020,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_bluenoise16_l.bundle",
+            "UnityCRC": 2785760404,
+            "FileHash": "6f5d7ec789fda8864cacb6cdb6936af9",
+            "FileCRC": 409964043,
+            "FileSize": 11489,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_bluenoise64_l.bundle",
+            "UnityCRC": 3236060721,
+            "FileHash": "2a9de56510a8e1b982e61376bee7491c",
+            "FileCRC": 114135395,
+            "FileSize": 6137,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_filmgrain.bundle",
+            "UnityCRC": 1297233222,
+            "FileHash": "1cf30ceaf45d499b5f6c263473e33e1d",
+            "FileCRC": 1917210286,
+            "FileSize": 1665970,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_smaa.bundle",
+            "UnityCRC": 3783756529,
+            "FileHash": "bc04f1e9bd2e8826cda192357159bc2a",
+            "FileCRC": 2381720031,
+            "FileSize": 58334,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        },
+        {
+            "BundleName": "defaultpackage_unityshaders.bundle",
+            "UnityCRC": 1836963328,
+            "FileHash": "a4fbc9f1ac711d16365fd2307d10368e",
+            "FileCRC": 1728113605,
+            "FileSize": 231994,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+﻿{
+  "actionName": "ReflectBullect",
+  "duration": 0.4,
+  "isLoop": true,
+  "moveSpeed": 0,
+  "hitBoxes": [
+  ]
+}

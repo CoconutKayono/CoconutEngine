@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Attack Normal 02 End_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 10021
+  actionName: Attack Normal 02 End
+  primaryIntent: 0
+  isLoop: 0
+  enableRotation: 0
+  enableRecenter: 0
+  enableLookAtMonster: 1
+  clip: {fileID: 1827226128182048838, guid: 62baa8bb78a8d5d47a6b115f0b7c99e2, type: 3}
+  inheritActionName: Attack Normal 01 End
+  finishTransition:
+    actionName: Idle
+    fadeDuration: 0
+  intentTransitions: []
+  signalTransitions: []
+  notifies: []
+  notifyStates:
+  - {fileID: 20679637529013907}
+  - {fileID: 4395844353538586993}
+--- !u!114 &20679637529013907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.067_0.554
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.06666667
+  length: 0.5543537
+  clips:
+  - {fileID: 8300000, guid: e6e7f097429cc1b4182fbbc1291182b4, type: 3}
+  dontPlayProbability: 0
+--- !u!114 &4395844353538586993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.912_0.630
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.9123656
+  length: 0.6297959
+  clips:
+  - {fileID: 8300000, guid: 2eb0e25f8b7e9ec40a17a8a8d9f8a069, type: 3}
+  dontPlayProbability: 0

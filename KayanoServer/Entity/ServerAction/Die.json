@@ -1,0 +1,8 @@
+﻿{
+  "actionName": "Die",
+  "duration": 2.8,
+  "isLoop": true,
+  "moveSpeed": 0,
+  "hitBoxes": [
+  ]
+}

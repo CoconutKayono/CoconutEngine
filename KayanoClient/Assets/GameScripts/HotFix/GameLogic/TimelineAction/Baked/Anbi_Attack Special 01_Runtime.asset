@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9018746051365788755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b944227304688ef4ca511ccb9ea2e887, type: 3}
+  m_Name: NotifyState_PlayParticle_0.172_0.495
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayParticleStateEntry
+  start: 0.17204084
+  length: 0.49462584
+  prefab: {fileID: 1872147318604286, guid: 5bea49531fc500c408823a2e2863106f, type: 3}
+  localPosition: {x: 0, y: 0.7, z: 0}
+  localRotation: {x: 0, y: 0, z: 0, w: 1}
+  localScale: {x: 1, y: 1, z: 1}
+--- !u!114 &-7888374435140131660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.172_0.495
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.17204084
+  length: 0.49462584
+  clips:
+  - {fileID: 8300000, guid: 8dd590bb7a3f66e46a3b2c08023b2af1, type: 3}
+  dontPlayProbability: 0
+--- !u!114 &-6499291187288719734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_0.417_0.250
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 0.41666666
+  length: 0.25
+  intentTransition:
+    actionName: Attack Normal 02
+    fadeDuration: 0
+    intent: 4
+    openTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Attack Special 01_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 1000
+  actionName: Attack Special 01
+  primaryIntent: 16
+  isLoop: 0
+  enableRotation: 0
+  enableRecenter: 0
+  enableLookAtMonster: 1
+  clip: {fileID: 1827226128182048838, guid: e4de79e2a94f9db4ea46bd6b27312ce8, type: 3}
+  inheritActionName: 
+  finishTransition:
+    actionName: Idle
+    fadeDuration: 0
+  intentTransitions: []
+  signalTransitions: []
+  notifies: []
+  notifyStates:
+  - {fileID: -7888374435140131660}
+  - {fileID: -9018746051365788755}
+  - {fileID: -6499291187288719734}

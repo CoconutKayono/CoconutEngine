@@ -1,0 +1,8 @@
+﻿{
+  "actionName": "Hit Heavy Back",
+  "duration": 2.2,
+  "isLoop": true,
+  "moveSpeed": 0,
+  "hitBoxes": [
+  ]
+}

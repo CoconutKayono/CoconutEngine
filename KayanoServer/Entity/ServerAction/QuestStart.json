@@ -1,0 +1,8 @@
+﻿{
+  "actionName": "QuestStart",
+  "duration": 7.2,
+  "isLoop": true,
+  "moveSpeed": 0,
+  "hitBoxes": [
+  ]
+}

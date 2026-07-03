@@ -1,0 +1,16 @@
+---
+description: Fantasy.Net 服务端开发工作流与编码红线
+alwaysApply: true
+---
+
+# Fantasy 开发规范
+
+处理本仓库代码前，先判断任务等级（L1-L4）。L2 及以上必须先查阅 `fantasy-net` skill 的 references 文档。
+
+## 红线
+
+- 异步用 `FTask`，禁止 `Task` / `async Task`
+- Entity / Hotfix / Main 分层；业务逻辑放 Hotfix
+- 不手动注册 Handler；不修改 Source Generator 生成的 `.g.cs`
+- 业务错误返回 `ErrorCode`，不用异常控制流程
+- 跨服通信分清 Address、Roaming、SphereEvent、本地 Event 边界

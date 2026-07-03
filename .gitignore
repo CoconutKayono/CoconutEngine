@@ -1,0 +1,194 @@
+# =============================================================================
+# Kayano / TEngine 6.2  monorepo — GitHub 上传用
+# 说明：KayanoClient/.gitignore 仍对 Unity 子目录生效；本文件补充仓库级规则。
+# 若需把某类资源纳入版本库，删除或注释对应段落即可。
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 操作系统 / IDE
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+.idea/
+.vs/
+.vscode/
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.opendb
+*.VC.db
+.consulo/
+
+# -----------------------------------------------------------------------------
+# 密钥与本地配置（切勿上传）
+# -----------------------------------------------------------------------------
+*.env
+*.env.*
+secrets/
+**/Fantasy.config.local*
+**/appsettings.Local.json
+
+# -----------------------------------------------------------------------------
+# openspec
+# -----------------------------------------------------------------------------
+openspec/
+
+# =============================================================================
+# KayanoClient — Unity 引擎缓存（体积大、可本地再生）
+# =============================================================================
+KayanoClient/[Ll]ibrary/
+KayanoClient/[Tt]emp/
+KayanoClient/[Oo]bj/
+KayanoClient/[Bb]uild/
+KayanoClient/[Bb]uilds/
+KayanoClient/[Ll]ogs/
+KayanoClient/[Mm]emoryCaptures/
+KayanoClient/UserSettings/
+KayanoClient/Recordings/
+
+# Unity 崩溃 / 导出
+KayanoClient/sysinfo.txt
+KayanoClient/ExportedObj/
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# =============================================================================
+# 文档
+# =============================================================================
+
+Books/
+KayanoBooks/
+
+# HybridCLR 本地生成与仓库克隆（可重新 Generate / init）
+KayanoClient/[Hh]ybridCLRData/
+KayanoClient/Assets/HybridCLRGenerate/
+KayanoClient/Assets/HybridCLRGenerate.meta
+
+# Burst / AOT 本地生成
+KayanoClient/ProjectSettings/CommonBurstAotSettings.json
+KayanoClient/ProjectSettings/BurstAotSettings_StandaloneWindows.json
+KayanoClient/ProjectSettings/BurstAotSettings_*.json
+
+# YooAsset 构建输出与沙盒
+KayanoClient/Bundles/
+KayanoClient/yoo/
+KayanoClient/Sandbox/
+KayanoClient/package/
+KayanoClient/Assets/StreamingAssets/
+KayanoClient/Assets/StreamingAssets.meta
+KayanoClient/Assets/AATemp/
+KayanoClient/Assets/AATemp.meta
+
+# TEngine 内置清单（本地构建生成）
+KayanoClient/Assets/TEngine/AssetSetting/Resources/BuiltinFileManifest.asset
+KayanoClient/Assets/TEngine/AssetSetting/Resources/BuiltinFileManifest.asset.meta
+
+# 截图与调试输出
+KayanoClient/Assets/Screenshots/
+KayanoClient/Assets/Screenshots.meta
+
+# =============================================================================
+# KayanoClient — 美术与大资源（建议走网盘 / FileServer / Git LFS，不进 GitHub）
+# =============================================================================
+
+# 全量美术：角色、特效、Timeline 动作资产等（AssetArt 约数千文件）
+KayanoClient/Assets/AssetArt/
+KayanoClient/Assets/AssetArt.meta
+
+# AssetRaw 中体积大或 Luban 可再生成的部分
+KayanoClient/Assets/AssetRaw/
+KayanoClient/Assets/AssetRaw/Configs/bytes/*.bytes.meta
+
+# 若 Audio / 场景 / 模型 也放在 AssetRaw 子目录，可取消注释：
+# KayanoClient/Assets/AssetRaw/Audio/
+# KayanoClient/Assets/AssetRaw/Scenes/
+# KayanoClient/Assets/AssetRaw/Models/
+
+# 字体源文件（SDF 与 ttf 在 AssetRaw/Fonts 已整目录忽略；勿全局忽略 *.ttf，否则 TextMesh Pro 会缺字库）
+
+# 二进制资源扩展名（限 Assets 下，避免误伤仓库根目录文档）
+KayanoClient/Assets/**/*.psd
+KayanoClient/Assets/**/*.tga
+KayanoClient/Assets/**/*.tif
+KayanoClient/Assets/**/*.tiff
+KayanoClient/Assets/**/*.exr
+KayanoClient/Assets/**/*.hdr
+KayanoClient/Assets/**/*.fbx
+KayanoClient/Assets/**/*.FBX
+KayanoClient/Assets/**/*.obj
+KayanoClient/Assets/**/*.blend
+KayanoClient/Assets/**/*.max
+KayanoClient/Assets/**/*.ma
+KayanoClient/Assets/**/*.mb
+KayanoClient/Assets/**/*.wav
+KayanoClient/Assets/**/*.mp3
+KayanoClient/Assets/**/*.ogg
+KayanoClient/Assets/**/*.aif
+KayanoClient/Assets/**/*.aiff
+KayanoClient/Assets/**/*.mp4
+KayanoClient/Assets/**/*.mov
+KayanoClient/Assets/**/*.avi
+
+# =============================================================================
+# KayanoServer — .NET 构建产物与日志
+# =============================================================================
+KayanoClient/**/*.csproj
+KayanoClient/**/*.sln
+KayanoServer/**/*.csproj
+KayanoServer/**/*.sln
+KayanoServer/**/[Bb]in/
+KayanoServer/**/[Oo]bj/
+KayanoServer/.vs/
+KayanoServer/**/Logs/
+KayanoServer/**/logs/
+
+# Fantasy 本地包缓存（若存在）
+KayanoServer/Fantasy.Packages/**/bin/
+KayanoServer/Fantasy.Packages/**/obj/
+
+# =============================================================================
+# Tools — 二进制工具链（可用脚本重新下载/编译）
+# =============================================================================
+Tools/Luban/
+Tools/Luban.ClientServer/
+Tools/FileServer/AssetRoot
+Tools/FileServer/node_modules/
+
+# GameEventSourceGenerator 构建产物
+Tools/GameEventSourceGenerator/.idea/
+Tools/GameEventSourceGenerator/GameEventAnalyzer/bin/
+Tools/GameEventSourceGenerator/GameEventAnalyzer/obj/
+Tools/GameEventSourceGenerator/SourceGenerator/bin/
+Tools/GameEventSourceGenerator/SourceGenerator/obj/
+
+# =============================================================================
+# Luban / 配置生成缓存
+# =============================================================================
+Configs/.cache.meta
+GenerateDatas/
+Configs/GameConfig/Datas/
+
+# Luban 测试导出 JSON（源表在 Excel；Test/Data 可再生成）
+Configs/GameConfig/Test/Data/
+
+# =============================================================================
+# 保留项说明（默认会提交）
+# -----------------------------------------------------------------------------
+# - KayanoClient/Assets/GameScripts/     热更与主程代码
+# - KayanoClient/Assets/TEngine/         框架与 Editor
+# - KayanoClient/Assets/AssetRaw/UI/     UI Prefab（不含 UIRaw 贴图）
+# - KayanoClient/Assets/AssetRaw/Configs/*.csv / *.asset  配置与本地化
+# - KayanoClient/Assets/Scenes/          场景
+# - KayanoClient/Packages/manifest.json  包依赖
+# - KayanoClient/ProjectSettings/
+# - Configs/GameConfig/luban.conf、Defines、CustomTemplate、转表脚本
+# - KayanoServer/Hotfix、Entity 源码
+# =============================================================================

@@ -1,0 +1,28 @@
+﻿{
+  "actionName": "Attack Normal 03",
+  "duration": 1.033333,
+  "isLoop": false,
+  "moveSpeed": 0,
+  "hitBoxes": [
+    {
+      "hitId": 10030,
+      "start": 0.2333333,
+      "end": 0.4666667,
+      "shape": "Sphere",
+      "centerX": 0,
+      "centerY": 1,
+      "centerZ": 1.5,
+      "radius": 1
+    },
+    {
+      "hitId": 10030,
+      "start": 0.5166667,
+      "end": 0.75,
+      "shape": "Sphere",
+      "centerX": 0,
+      "centerY": 1,
+      "centerZ": 1.5,
+      "radius": 1
+    }
+  ]
+}

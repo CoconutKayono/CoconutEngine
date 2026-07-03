@@ -1,0 +1,565 @@
+{
+"Date": "2026/6/20 22:00:43",
+"UnityVersion": "6000.3.8f1",
+"com.unity.scriptablebuildpipeline": "2.5.2",
+"traceEvents": [
+{"name": "AssetDatabase.SaveAssets", "ph": "X", "dur": 1562.4, "tid": 1, "ts": 1935, "pid": 1}
+,{"name": "SwitchToBuildPlatform", "ph": "X", "dur": 489.3, "tid": 1, "ts": 32203, "pid": 1}
+,{"name": "RebuildSpriteAtlasCache", "ph": "X", "dur": 12568.6, "tid": 1, "ts": 32886, "pid": 1}
+,{"name": "BuildPlayerScripts", "ph": "X", "dur": 8222948.9, "tid": 1, "ts": 45540, "pid": 1}
+,{"name": "PostScriptsCallback", "ph": "X", "dur": 152.099999999336, "tid": 1, "ts": 8268973, "pid": 1}
+,{"name": "CalculateSceneDependencyData", "ph": "X", "dur": 76655.8999999997, "tid": 1, "ts": 8269359, "pid": 1}
+,{"name": "LoadCachedData", "ph": "X", "dur": 49031.0000000009, "tid": 1, "ts": 8279896, "pid": 1, "args": {"0":"1 items", "1":"Time spent deserializing: 48ms", "2":"Local Cache hit count: 1"}}
+,{"name": "Read and deserialize cache info", "ph": "X", "dur": 48409.2000000001, "tid": 1, "ts": 8280499, "pid": 1}
+,{"name": "Check for changed dependencies", "ph": "X", "dur": 5186.9999999999, "tid": 1, "ts": 8328931, "pid": 1, "args": {"0":"Unchanged dependencies count: 1"}}
+,{"name": "Calculate Scene Dependencies", "ph": "X", "dur": 8883.0999999991, "tid": 1, "ts": 8334266, "pid": 1, "args": {"0":"1dc834be4c4bc9046ba19e20826ffb4e (cached)"}}
+,{"name": "CalculateCustomDependencyData", "ph": "X", "dur": 1328.29999999922, "tid": 1, "ts": 8346251, "pid": 1}
+,{"name": "CalculateAssetDependencyData", "ph": "X", "dur": 992075.700000001, "tid": 1, "ts": 8347765, "pid": 1, "args": {"0":"22df041aa5301c3468d85b707c0993ba", "1":"d9aa2d9becc2af144bc79639bcfd6e38", "2":"a83d2f75e15245f4ea27f7ed17c60c6f"}}
+,{"name": "Gathering Cache Entries to Load", "ph": "X", "dur": 401715.699999999, "tid": 1, "ts": 8351286, "pid": 1}
+,{"name": "LoadCachedData", "ph": "X", "dur": 372354.2, "tid": 1, "ts": 8357508, "pid": 1, "args": {"0":"154 items", "1":"Time spent deserializing: 372ms", "2":"Local Cache hit count: 151"}}
+,{"name": "Read and deserialize cache info", "ph": "X", "dur": 372332.8, "tid": 1, "ts": 8357522, "pid": 1}
+,{"name": "Check for changed dependencies", "ph": "X", "dur": 23130.799999999, "tid": 1, "ts": 8729863, "pid": 1, "args": {"0":"Unchanged dependencies count: 151"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 23.6999999997352, "tid": 1, "ts": 8753798, "pid": 1, "args": {"0":"14515f8505976b04fbdd66ddc61a661c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.59999999980209, "tid": 1, "ts": 8753822, "pid": 1, "args": {"0":"edc8f2b531d3d884ba848422f6efa159 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 8753825, "pid": 1, "args": {"0":"e8940b0e0bc47c648806ff660a4cd7ea (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.09999999990396, "tid": 1, "ts": 8753826, "pid": 1, "args": {"0":"aefbacf2519de714089f10161706e0ba (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.99999999858846, "tid": 1, "ts": 8753830, "pid": 1, "args": {"0":"c8f4a2b1e3d5476890a1b2c3d4e5f678 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 8753832, "pid": 1, "args": {"0":"cca6d77b2c9c6c847aedb653ce800e36 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.39999999939755, "tid": 1, "ts": 8753834, "pid": 1, "args": {"0":"e35bce102944eed40859a9ec70b00536 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 5.89999999829161, "tid": 1, "ts": 8753836, "pid": 1, "args": {"0":"ba2e25cb7088feb499a519fe83abb376 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.80000000020664, "tid": 1, "ts": 8753842, "pid": 1, "args": {"0":"29d04ef6bd5dc6c45a013f704e09eaa0 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.50000000050932, "tid": 1, "ts": 8753845, "pid": 1, "args": {"0":"6ddf0caf7152f074f9a4173628287a6a (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 640.400000000227, "tid": 1, "ts": 8753848, "pid": 1}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 211.499999999432, "tid": 1, "ts": 8754489, "pid": 1}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8.79999999961001, "tid": 1, "ts": 8754701, "pid": 1, "args": {"0":"56b393fd676753b48b636a981dc34d4f (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.39999999939755, "tid": 1, "ts": 8754710, "pid": 1, "args": {"0":"762055df2d767264bbb1967e8bb56f36 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.30000000010477, "tid": 1, "ts": 8754714, "pid": 1, "args": {"0":"f8be54dbe56c53944a1ab3e561807ef7 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 5.09999999849242, "tid": 1, "ts": 8754716, "pid": 1, "args": {"0":"010333c829dd292439de3a705e39d446 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.59999999980209, "tid": 1, "ts": 8754721, "pid": 1, "args": {"0":"def19e9b9ed77ea438df0912d2d2f9c1 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 161.50000000016, "tid": 1, "ts": 8754724, "pid": 1}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6.79999999920256, "tid": 1, "ts": 8754886, "pid": 1, "args": {"0":"8362cadbaf07dbd44990f123578fb217 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.50000000071304, "tid": 1, "ts": 8754893, "pid": 1, "args": {"0":"6fecd715f9605734fa12e9357ea06a8f (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.09999999990396, "tid": 1, "ts": 8754897, "pid": 1, "args": {"0":"09c9ef0bb8afdf64eba33bfbc6640e0b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.00000000061118, "tid": 1, "ts": 8754900, "pid": 1, "args": {"0":"d9d7ec4232618df4799151d88e0d0a18 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.20000000101572, "tid": 1, "ts": 8754903, "pid": 1, "args": {"0":"74945e6245c54964bba0706d222f8922 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.6999999992986, "tid": 1, "ts": 8754907, "pid": 1, "args": {"0":"dbe7256bcff497944bc387d65df91398 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.39999999939755, "tid": 1, "ts": 8754910, "pid": 1, "args": {"0":"f7f903b7645588d4a88cda10e6863346 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.50000000050932, "tid": 1, "ts": 8754913, "pid": 1, "args": {"0":"05105bd7d94d4a047a3458de7ce54a2c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 36072.7999999999, "tid": 1, "ts": 8754916, "pid": 1, "args": {"0":"ecec8ee629e7e1945b209218a435b9cc (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7249.09999999909, "tid": 1, "ts": 8790990, "pid": 1, "args": {"0":"e0b454e94906be54cadee34e584da5a3 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7303.49999999999, "tid": 1, "ts": 8798241, "pid": 1, "args": {"0":"e640339bb53dd6e4792e7526ff417487 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7733.59999999957, "tid": 1, "ts": 8805546, "pid": 1, "args": {"0":"f8a2babe100555049b1858df1f47a21b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 5990.99999999999, "tid": 1, "ts": 8813281, "pid": 1, "args": {"0":"c7330c9801771d346a34a60d81ecf159 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7102.19999999936, "tid": 1, "ts": 8819273, "pid": 1, "args": {"0":"70f224a1e6aff94488c4600e333ae869 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6297.59999999987, "tid": 1, "ts": 8826376, "pid": 1, "args": {"0":"521beb02129069246af7e0f5ddeaabaa (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7108.50000000028, "tid": 1, "ts": 8832675, "pid": 1, "args": {"0":"9cd12e21c8ccefd4f9f0cc07772219fb (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7117.7000000007, "tid": 1, "ts": 8839785, "pid": 1, "args": {"0":"0c70995a52ba9f14f98085401a30a330 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7128.8999999997, "tid": 1, "ts": 8846905, "pid": 1, "args": {"0":"f18bcc83719074d429b7e41ca576a772 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7638.39999999982, "tid": 1, "ts": 8854035, "pid": 1, "args": {"0":"4c727e33323d0f8409b9eeedeac555b3 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6352.99999999916, "tid": 1, "ts": 8861675, "pid": 1, "args": {"0":"529649ff19ce6e5499b7762187178d28 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8366.3000000015, "tid": 1, "ts": 8868029, "pid": 1, "args": {"0":"67ce873db7f41b24999d0ff60637a3e0 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6594.10000000025, "tid": 1, "ts": 8876396, "pid": 1, "args": {"0":"f76aca0c99205b74f96d874327c4e71f (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 9363.60000000059, "tid": 1, "ts": 8882992, "pid": 1, "args": {"0":"4944fe7ac56586140ad9c4d4faff67d5 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 121708.199999999, "tid": 1, "ts": 8892357, "pid": 1, "args": {"0":"93e7abf119270b74c9802b53a3cf0d6c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7643.99999999841, "tid": 1, "ts": 9014066, "pid": 1, "args": {"0":"ca204f2fae0b27247b7f9a349cbd5a46 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 13300.9000000002, "tid": 1, "ts": 9021711, "pid": 1, "args": {"0":"3f4849d649e5a9647acda84aea936e20 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 31699.8999999996, "tid": 1, "ts": 9035012, "pid": 1, "args": {"0":"372115e7c772cc648a9732622bc18072 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 11394.2999999999, "tid": 1, "ts": 9066713, "pid": 1, "args": {"0":"c533b2d78b97aac4eb313790452938ea (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 5970.19999999975, "tid": 1, "ts": 9078108, "pid": 1, "args": {"0":"9b969a6a722855c47be887dacd539056 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 18.500000000131, "tid": 1, "ts": 9084079, "pid": 1, "args": {"0":"f43899c31dd434901b0422f98bcde88b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 11.8000000002212, "tid": 1, "ts": 9084098, "pid": 1, "args": {"0":"01ccaea9b49214edda39f03f648b5b8b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 11.2000000008265, "tid": 1, "ts": 9084110, "pid": 1, "args": {"0":"1f44cb90b6ae648c783dac573bfe9cd0 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 10.2000000006228, "tid": 1, "ts": 9084121, "pid": 1, "args": {"0":"bfad0e64f8ef1491c8def7e679187b89 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 9.50000000011642, "tid": 1, "ts": 9084131, "pid": 1, "args": {"0":"af67f6c46933441daaa64d6880890586 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 10.5000000003201, "tid": 1, "ts": 9084141, "pid": 1, "args": {"0":"c95935206d18f42399e9881ce6bdf61c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 34.4999999997526, "tid": 1, "ts": 9084152, "pid": 1, "args": {"0":"a43cb397a444ce44f9becc183ced96ed (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7161.59999999945, "tid": 1, "ts": 9084186, "pid": 1, "args": {"0":"b7f7eb5e4916f9146865e3baf9352bc3 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7937.2999999996, "tid": 1, "ts": 9091349, "pid": 1, "args": {"0":"56f568eb6521f9941a44395fa02bcab0 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6661.29999999976, "tid": 1, "ts": 9099287, "pid": 1, "args": {"0":"cd5d10f067c082743932c011cac615b9 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7215.69999999883, "tid": 1, "ts": 9105949, "pid": 1, "args": {"0":"e4ba211a108df9240be6644dc4fb810f (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 21.0000000006403, "tid": 1, "ts": 9113165, "pid": 1, "args": {"0":"32ffff5368d26f64faa9582cdc23e00e (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7188.40000000091, "tid": 1, "ts": 9113187, "pid": 1, "args": {"0":"407ce752924d83b498b642d8a6152b81 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7022.99999999923, "tid": 1, "ts": 9120376, "pid": 1, "args": {"0":"6b810fe1e9ac54a4b866c77a6adbc2f5 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6717.39999999954, "tid": 1, "ts": 9127399, "pid": 1, "args": {"0":"e8916e4fd83b1b145a77f6c163e92f6e (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 9054.79999999989, "tid": 1, "ts": 9134118, "pid": 1, "args": {"0":"1800f2f99e1476a4fa89d7d7c68c50ed (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7562.7000000004, "tid": 1, "ts": 9143174, "pid": 1, "args": {"0":"cf4574ea6ba27354c8e6ca5dd82faf61 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7218.60000000015, "tid": 1, "ts": 9150738, "pid": 1, "args": {"0":"099fe4fcefb6d764ebda6d548fc3b31b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7022.60000000024, "tid": 1, "ts": 9157958, "pid": 1, "args": {"0":"46541fa820eae2149b92528a3c6cb4a7 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8405.39999999964, "tid": 1, "ts": 9164983, "pid": 1, "args": {"0":"b56462d92bb2f0945ba9cf36542b67e4 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 16.4999999997235, "tid": 1, "ts": 9173390, "pid": 1, "args": {"0":"70b2e4478cd5fd94b993dbfd2753c1d2 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8262.00000000063, "tid": 1, "ts": 9173406, "pid": 1, "args": {"0":"d478676ea84ea82448508303a7ef4ae9 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 9731.20000000017, "tid": 1, "ts": 9181669, "pid": 1, "args": {"0":"4d1cc777b99323f40b39b451a0e5ca4e (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 9412.89999999935, "tid": 1, "ts": 9191402, "pid": 1, "args": {"0":"6ea1124a3e4e5d44b807820087a292fe (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7432.3000000004, "tid": 1, "ts": 9200816, "pid": 1, "args": {"0":"c455a4532f2886940be73ed1bc7eea15 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8669.69999999856, "tid": 1, "ts": 9208250, "pid": 1, "args": {"0":"7e07fadcbe5e2ca49a6fcfaa9ded8e5d (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6910.80000000147, "tid": 1, "ts": 9216920, "pid": 1, "args": {"0":"fc61968a42a25c94c81d992a0478dd07 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7845.50000000127, "tid": 1, "ts": 9223832, "pid": 1, "args": {"0":"59a43f14c5f7b844e85433189ebf5660 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6677.8000000013, "tid": 1, "ts": 9231679, "pid": 1, "args": {"0":"f63115240808a5a43a72cfb51b175fa5 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 250.599999999395, "tid": 1, "ts": 9238358, "pid": 1, "args": {"0":"c1dc9479e8b3b89488d1e56c1c833a63 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7497.80000000101, "tid": 1, "ts": 9238609, "pid": 1, "args": {"0":"70fe2237dc87def43a4a27306fe64440 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6825.89999999982, "tid": 1, "ts": 9246108, "pid": 1, "args": {"0":"c179882e64efd514c863cbcc447c11e5 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8530.00000000065, "tid": 1, "ts": 9252934, "pid": 1, "args": {"0":"9c3e2cf9b2f6b6e4896875a1f45c34b4 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7092.09999999985, "tid": 1, "ts": 9261466, "pid": 1, "args": {"0":"9562aa9510003d948b66372112af69f1 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7453.19999999992, "tid": 1, "ts": 9268559, "pid": 1, "args": {"0":"d2988fac81349ca4ebed106d0ce7f01a (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7294.49999999997, "tid": 1, "ts": 9276013, "pid": 1, "args": {"0":"b3d805517ca6f844893993542724c4db (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 7117.79999999999, "tid": 1, "ts": 9283309, "pid": 1, "args": {"0":"adf7b812a98e77d47a589e368722cd07 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6599.70000000067, "tid": 1, "ts": 9290428, "pid": 1, "args": {"0":"e7b8e189a9bfd334abfe0386cb46449b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 6390.69999999992, "tid": 1, "ts": 9297029, "pid": 1, "args": {"0":"980d123004aeec045aff16c2eb598cf8 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 5.40000000000873, "tid": 1, "ts": 9303420, "pid": 1, "args": {"0":"68e6db2ebdc24f95958faec2be5558d6 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.09999999970023, "tid": 1, "ts": 9303426, "pid": 1, "args": {"0":"573620ae32aec764abd4d728906d2587 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.40000000142027, "tid": 1, "ts": 9303428, "pid": 1, "args": {"0":"cf852408f2e174538bcd9b7fda1c5ae7 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.50000000050932, "tid": 1, "ts": 9303431, "pid": 1, "args": {"0":"ec9fec698a3456d4fb18cf8bacb7a2bc (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.90000000111468, "tid": 1, "ts": 9303434, "pid": 1, "args": {"0":"5e7134d6e63e0bc47a1dd2669cedb379 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.30000000010477, "tid": 1, "ts": 9303436, "pid": 1, "args": {"0":"65df88701913c224d95fc554db28381a (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.89999999929569, "tid": 1, "ts": 9303438, "pid": 1, "args": {"0":"2aed67ad60045d54ba3a00c91e2d2631 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303440, "pid": 1, "args": {"0":"e8ee25143a34b8c4388709ea947055d1 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9303442, "pid": 1, "args": {"0":"1121bb4e615ca3c48b214e79e841e823 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.80000000041036, "tid": 1, "ts": 9303444, "pid": 1, "args": {"0":"9c70c1a35ff15f340b38ea84842358bf (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303448, "pid": 1, "args": {"0":"701880fecb344ea4c9cd0db3407ab287 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.19999999919673, "tid": 1, "ts": 9303450, "pid": 1, "args": {"0":"e7857e9d0c934dc4f83f270f8447b006 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303453, "pid": 1, "args": {"0":"6cda457ac28612740adb23da5d39ea92 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 9303455, "pid": 1, "args": {"0":"562b7ae4f629f144aa97780546fce7c6 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303457, "pid": 1, "args": {"0":"1edcd131364091c46a17cbff0b1de97a (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.200000000812, "tid": 1, "ts": 9303459, "pid": 1, "args": {"0":"63eaba0ebfb82cc43bde059b4a8c65f6 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.70000000071013, "tid": 1, "ts": 9303461, "pid": 1, "args": {"0":"c49e63ed1bbcb334780a3bd19dfed403 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.70000000071013, "tid": 1, "ts": 9303463, "pid": 1, "args": {"0":"a15b78cf8ca26ca4fb2090293153c62c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303465, "pid": 1, "args": {"0":"5f1864addb451f54bae8c86d230f736e (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.49999999869033, "tid": 1, "ts": 9303467, "pid": 1, "args": {"0":"e3d24661c1e055f45a7560c033dbb837 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.90000000111468, "tid": 1, "ts": 9303469, "pid": 1, "args": {"0":"53626a513ea68ce47b59dc1299fe3959 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 4.20000000121945, "tid": 1, "ts": 9303471, "pid": 1, "args": {"0":"41439944d30ece34e96484bdb6645b55 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303476, "pid": 1, "args": {"0":"d50c5e07c9911a74982bddf7f3075e7b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303477, "pid": 1, "args": {"0":"81200413a40918d4d8702e94db29911c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.79999999859137, "tid": 1, "ts": 9303479, "pid": 1, "args": {"0":"7ce2118f74614a94aa8a0cdf2e6062c3 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.99999999858846, "tid": 1, "ts": 9303483, "pid": 1, "args": {"0":"1134690bf9216164dbc75050e35b7900 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.19999999899301, "tid": 1, "ts": 9303485, "pid": 1, "args": {"0":"10b6c6d22e73dea46a8ab36b6eebd629 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 9303487, "pid": 1, "args": {"0":"d18a24d7b4ed50f4387993566d9d3ae2 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303489, "pid": 1, "args": {"0":"14381521ff11cb74abe3fe65401c23be (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303491, "pid": 1, "args": {"0":"a2ec5cbf5a9b64345ad3fab0912ddf7b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 9303493, "pid": 1, "args": {"0":"c989e1ed85cf7154caa922fec53e6af6 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303495, "pid": 1, "args": {"0":"071e954febf155243a6c81e48f452644 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303496, "pid": 1, "args": {"0":"e63eef8f54aa9dc4da9a5ac094b503b5 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.19999999899301, "tid": 1, "ts": 9303498, "pid": 1, "args": {"0":"4dcc0502f8586f941b5c4a66717205e8 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303501, "pid": 1, "args": {"0":"d4044ea2490d63b43aa1765f8efbf8a9 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.09999999970023, "tid": 1, "ts": 9303502, "pid": 1, "args": {"0":"d5c9b274310e5524ebe32a4e4da3df1f (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303505, "pid": 1, "args": {"0":"2ca97df9d1801e84a8a8f2c53cb744f0 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 13.199999999415, "tid": 1, "ts": 9303506, "pid": 1, "args": {"0":"9d92991794bb5864c8085468b97aa067 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9303520, "pid": 1, "args": {"0":"896d9004736809c4fb5973b7c12eb8b9 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.39999999939755, "tid": 1, "ts": 9303522, "pid": 1, "args": {"0":"c94ad916058dff743b0f1c969ddbe660 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303524, "pid": 1, "args": {"0":"f69770e54f2823f43badf77916acad83 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 4.99999999919964, "tid": 1, "ts": 9303526, "pid": 1, "args": {"0":"39451254daebd6d40b52899c1f1c0c1b (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.9000000013184, "tid": 1, "ts": 9303531, "pid": 1, "args": {"0":"ed5ea7ce59ca8ec4f9f14bf470a30f35 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 9303534, "pid": 1, "args": {"0":"bfed3e498947fcb4890b7f40f54d85b9 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303536, "pid": 1, "args": {"0":"1c3c6d69a645b804fa232004b96b7ad3 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.39999999919382, "tid": 1, "ts": 9303539, "pid": 1, "args": {"0":"ff47e5a0f105eb34883b973e51f4db62 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.60000000162108, "tid": 1, "ts": 9303540, "pid": 1, "args": {"0":"d512512f4af60a442ab3458489412954 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303543, "pid": 1, "args": {"0":"d36f0fe53425e08499a2333cf423634c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.29999999990105, "tid": 1, "ts": 9303545, "pid": 1, "args": {"0":"fc3fa8f108657e14486697c9a84ccfc5 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.50000000030559, "tid": 1, "ts": 9303546, "pid": 1, "args": {"0":"96aaab9cc247d0b4c98132159688c1af (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303548, "pid": 1, "args": {"0":"47a45908f6db0cb44a0d5e961143afec (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.39999999919382, "tid": 1, "ts": 9303550, "pid": 1, "args": {"0":"fa042edbfc40fbd4bad0ab9d505b1223 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.19999999899301, "tid": 1, "ts": 9303551, "pid": 1, "args": {"0":"c9bd74624d8070f429e3f46d161f9204 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 9303553, "pid": 1, "args": {"0":"179f794063d2a66478e6e726f84a65bc (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.50000000030559, "tid": 1, "ts": 9303555, "pid": 1, "args": {"0":"f0b67500f7fad3b4c9f2b13e8f41ba6e (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.00000000061118, "tid": 1, "ts": 9303557, "pid": 1, "args": {"0":"654c582f7f8a5a14dbd7d119cbde215d (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303560, "pid": 1, "args": {"0":"9930fb4528622b34687b00bbe6883de7 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.69999999909487, "tid": 1, "ts": 9303562, "pid": 1, "args": {"0":"dd77ffd079630404e879388999033049 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303564, "pid": 1, "args": {"0":"5cdee82a77d13994f83b8fdabed7c301 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.50000000030559, "tid": 1, "ts": 9303566, "pid": 1, "args": {"0":"bd9e8c758250ef449a4b4bfaad7a2133 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.20000000060827, "tid": 1, "ts": 9303568, "pid": 1, "args": {"0":"1097e90e1306e26439701489f391a6c0 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9303569, "pid": 1, "args": {"0":"fd2fd78b392986e42a12df2177d3b89c (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9303571, "pid": 1, "args": {"0":"510a2f57334933e4a8dbabe4c30204e4 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.70000000071013, "tid": 1, "ts": 9303573, "pid": 1, "args": {"0":"b4db8180660810945bf8d55ab44352ad (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 1.59999999959837, "tid": 1, "ts": 9303575, "pid": 1, "args": {"0":"d1f1048909d55cd4fa1126ab998f617e (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 93.1000000000495, "tid": 1, "ts": 9303577, "pid": 1, "args": {"0":"51eee22c2a633ef4aada830eed57c3fd (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 3.60000000000582, "tid": 1, "ts": 9303670, "pid": 1, "args": {"0":"f9ee4ed84c1d10c49aabb9b210b0fc44 (cached)"}}
+,{"name": "Calculate Asset Dependencies", "ph": "X", "dur": 8725.39999999935, "tid": 1, "ts": 9303674, "pid": 1, "args": {"0":"1805f5a7ce36bf44aa8b82bb5a897a3f (cached)"}}
+,{"name": "Gathering Cache Entries to Save", "ph": "X", "dur": 17042.4000000003, "tid": 1, "ts": 9317396, "pid": 1}
+,{"name": "SaveCachedData", "ph": "X", "dur": 12955.7999999997, "tid": 1, "ts": 9321481, "pid": 1, "args": {"0":"Saving 3 infos"}}
+,{"name": "SerializingCacheInfos[3]", "ph": "X", "dur": 11185.1999999999, "tid": 1, "ts": 9323245, "pid": 1}
+,{"name": "StripUnusedSpriteSources", "ph": "X", "dur": 4545.79999999987, "tid": 1, "ts": 9340002, "pid": 1}
+,{"name": "CreateBuiltInShadersBundle", "ph": "X", "dur": 2505.40000000001, "tid": 1, "ts": 9344648, "pid": 1}
+,{"name": "PostDependencyCallback", "ph": "X", "dur": 85.6000000003405, "tid": 1, "ts": 9347206, "pid": 1}
+,{"name": "GenerateBundlePacking", "ph": "X", "dur": 13781.1999999994, "tid": 1, "ts": 9347332, "pid": 1}
+,{"name": "UpdateBundleObjectLayout", "ph": "X", "dur": 10648.9000000001, "tid": 1, "ts": 9361198, "pid": 1}
+,{"name": "PopulateReferencesMaps", "ph": "X", "dur": 4216.00000000035, "tid": 1, "ts": 9362413, "pid": 1}
+,{"name": "Populate Files Map", "ph": "X", "dur": 2955.10000000104, "tid": 1, "ts": 9362605, "pid": 1, "args": {"0":"Count=42"}}
+,{"name": "Populate Assets Map", "ph": "X", "dur": 2278.1, "tid": 1030, "ts": 9362446, "pid": 1, "args": {"0":"Count=154"}}
+,{"name": "Populate Scenes Map", "ph": "X", "dur": 115.3, "tid": 1030, "ts": 9364735, "pid": 1, "args": {"0":"Count=1"}}
+,{"name": "UpdateWriteData", "ph": "X", "dur": 3554.00000000009, "tid": 1, "ts": 9368292, "pid": 1}
+,{"name": "GenerateBundleCommands", "ph": "X", "dur": 23324.0999999998, "tid": 1, "ts": 9371938, "pid": 1}
+,{"name": "GenerateSubAssetPathMaps", "ph": "X", "dur": 2526.90000000075, "tid": 1, "ts": 9395357, "pid": 1}
+,{"name": "GenerateBundleMaps", "ph": "X", "dur": 4084.89999999983, "tid": 1, "ts": 9397944, "pid": 1}
+,{"name": "Temporary Map Creations", "ph": "X", "dur": 1281.70000000136, "tid": 1, "ts": 9399486, "pid": 1}
+,{"name": "Populate BuildReferenceMaps", "ph": "X", "dur": 556.800000000294, "tid": 1, "ts": 9400769, "pid": 1}
+,{"name": "Populate BuildUsageTagSet", "ph": "X", "dur": 701.29999999881, "tid": 1, "ts": 9401327, "pid": 1}
+,{"name": "PostPackingCallback", "ph": "X", "dur": 101.49999999885, "tid": 1, "ts": 9402099, "pid": 1}
+,{"name": "WriteSerializedFiles", "ph": "X", "dur": 254910.2, "tid": 1, "ts": 9402259, "pid": 1}
+,{"name": "RunCachedOperation", "ph": "X", "dur": 251530.6, "tid": 1, "ts": 9405638, "pid": 1, "args": {"0":"Total Entries: 42, Processed: 1, Cached: 41"}}
+,{"name": "Creating Cache Entries", "ph": "X", "dur": 59659.1000000008, "tid": 1, "ts": 9405699, "pid": 1}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 6722.90000000066, "tid": 1, "ts": 9406255, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 2570.30000000123, "tid": 1, "ts": 9407383, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 721.199999999953, "tid": 1, "ts": 9409956, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 93.6999999994441, "tid": 1, "ts": 9410679, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 101.300000000265, "tid": 1, "ts": 9410773, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 406.100000000151, "tid": 1, "ts": 9410875, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 398.299999998926, "tid": 1, "ts": 9411282, "pid": 1, "args": {"0":"CAB-f79bfb4fb8c97cb5e8434a0169cbd1c2"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 178.70000000039, "tid": 1, "ts": 9412980, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 54.5000000001892, "tid": 1, "ts": 9413006, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 12.7000000011321, "tid": 1, "ts": 9413061, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.700000000506407, "tid": 1, "ts": 9413074, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 3.50000000071304, "tid": 1, "ts": 9413075, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.899999999514, "tid": 1, "ts": 9413079, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 30.2000000010594, "tid": 1, "ts": 9413091, "pid": 1, "args": {"0":"CAB-df1959f295d436e1bcd7362f0e003665"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 100.099999999657, "tid": 1, "ts": 9413159, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 18.9000000009401, "tid": 1, "ts": 9413172, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 7.09999999889988, "tid": 1, "ts": 9413191, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.500000000101863, "tid": 1, "ts": 9413198, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.19999999899301, "tid": 1, "ts": 9413199, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 8.89999999890279, "tid": 1, "ts": 9413201, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 17.7000000003318, "tid": 1, "ts": 9413210, "pid": 1, "args": {"0":"CAB-b617a5a68bcc79f66267aa54c08999e8"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 218.799999998737, "tid": 1, "ts": 9413260, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 83.5000000006403, "tid": 1, "ts": 9413283, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 14.3000000007305, "tid": 1, "ts": 9413367, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9413381, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.99999999879219, "tid": 1, "ts": 9413382, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 13.8000000006286, "tid": 1, "ts": 9413385, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 47.4000000012893, "tid": 1, "ts": 9413399, "pid": 1, "args": {"0":"CAB-be8be645ec8617903de61c4fd748cecc"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 2086.40000000014, "tid": 1, "ts": 9413479, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 1694.19999999991, "tid": 1, "ts": 9413521, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 30.3000000003522, "tid": 1, "ts": 9415216, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 1.10000000131549, "tid": 1, "ts": 9415246, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 6.80000000102154, "tid": 1, "ts": 9415248, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 36.8999999991502, "tid": 1, "ts": 9415255, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 206.299999999828, "tid": 1, "ts": 9415292, "pid": 1, "args": {"0":"CAB-582eeb0fb4a69b9fb9daa4e400dd865e"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 340.299999999843, "tid": 1, "ts": 9415569, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 120.8000000006, "tid": 1, "ts": 9415610, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 29.8999999995431, "tid": 1, "ts": 9415731, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.700000000506407, "tid": 1, "ts": 9415761, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 3.39999999960128, "tid": 1, "ts": 9415762, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 34.9999999998545, "tid": 1, "ts": 9415765, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 73.7000000008265, "tid": 1, "ts": 9415800, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 1422.19999999907, "tid": 1, "ts": 9415910, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 847.29999999945, "tid": 1, "ts": 9415956, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 60.8000000011089, "tid": 1, "ts": 9416805, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9416866, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 5.60000000041327, "tid": 1, "ts": 9416869, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 166.200000001481, "tid": 1, "ts": 9416874, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 249.300000001313, "tid": 1, "ts": 9417041, "pid": 1, "args": {"0":"CAB-5ecb9db3d4f427803d6fec1a7dc1cdba"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 143.700000000536, "tid": 1, "ts": 9417333, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 40.8999999999651, "tid": 1, "ts": 9417349, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 7.10000000071886, "tid": 1, "ts": 9417390, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.90000000091095, "tid": 1, "ts": 9417397, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 3.80000000041036, "tid": 1, "ts": 9417398, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.7000000009284, "tid": 1, "ts": 9417402, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 18.0999999993219, "tid": 1, "ts": 9417414, "pid": 1, "args": {"0":"CAB-866906be144cd072c82445634a4c4353"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 11818.4999999994, "tid": 1, "ts": 9417478, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Gather Objects", "ph": "X", "dur": 18.1000000011409, "tid": 1, "ts": 9419935, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 10.2999999999156, "tid": 1, "ts": 9419955, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 3.49999999889405, "tid": 1, "ts": 9419966, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 16.2000000000262, "tid": 1, "ts": 9419971, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Hashing PreloadInfo", "ph": "X", "dur": 119.299999998475, "tid": 1, "ts": 9419988, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 299.399999999878, "tid": 1, "ts": 9420108, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 10.6999999989057, "tid": 1, "ts": 9420408, "pid": 1, "args": {"0":"CAB-e89ba23d553b8a4e37aa1108f42d25b4.sharedAssets"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 4478.70000000148, "tid": 1, "ts": 9429303, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 2764.49999999932, "tid": 1, "ts": 9429556, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 339.099999999235, "tid": 1, "ts": 9432321, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 1.29999999990105, "tid": 1, "ts": 9432660, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 17.2999999995227, "tid": 1, "ts": 9432662, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 187.199999998484, "tid": 1, "ts": 9432679, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 868.599999999788, "tid": 1, "ts": 9432867, "pid": 1, "args": {"0":"CAB-d00ce80f56595d8f474213da534f7110"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 191.899999999805, "tid": 1, "ts": 9433784, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 78.7000000000262, "tid": 1, "ts": 9433802, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 10.8000000000175, "tid": 1, "ts": 9433881, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.60000000121363, "tid": 1, "ts": 9433892, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.80000000020664, "tid": 1, "ts": 9433892, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 14.100000000326, "tid": 1, "ts": 9433895, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 33.0999999987398, "tid": 1, "ts": 9433909, "pid": 1, "args": {"0":"CAB-ea1b2c1b49bfe734b6fc8afd506f3845"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 141.000000001441, "tid": 1, "ts": 9433976, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 40.8999999999651, "tid": 1, "ts": 9433987, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.50000000011642, "tid": 1, "ts": 9434029, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 1.40000000101281, "tid": 1, "ts": 9434038, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.70000000071013, "tid": 1, "ts": 9434040, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.7000000009284, "tid": 1, "ts": 9434041, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.8999999999505, "tid": 1, "ts": 9434053, "pid": 1, "args": {"0":"CAB-99d52bc3d862ef2fc9cd1ef197e490ce"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 138.299999998708, "tid": 1, "ts": 9434118, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 37.5999999996566, "tid": 1, "ts": 9434129, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.40000000082364, "tid": 1, "ts": 9434167, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.90000000091095, "tid": 1, "ts": 9434177, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.09999999970023, "tid": 1, "ts": 9434178, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.6000000000204, "tid": 1, "ts": 9434180, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.8000000006577, "tid": 1, "ts": 9434193, "pid": 1, "args": {"0":"CAB-57f40ad0d5bd8697791e2cb07af858ab"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 138.000000000829, "tid": 1, "ts": 9434257, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 39.600000000064, "tid": 1, "ts": 9434268, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 10.0999999995111, "tid": 1, "ts": 9434308, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.60000000121363, "tid": 1, "ts": 9434318, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9434319, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.8000000002212, "tid": 1, "ts": 9434321, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 30.799999998635, "tid": 1, "ts": 9434332, "pid": 1, "args": {"0":"CAB-9c1698a07fa0088071247af04935b615"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 140.299999999115, "tid": 1, "ts": 9434395, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 41.1999999996624, "tid": 1, "ts": 9434407, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.69999999870197, "tid": 1, "ts": 9434448, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.699999998687417, "tid": 1, "ts": 9434458, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.89999999929569, "tid": 1, "ts": 9434459, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.9999999988067, "tid": 1, "ts": 9434461, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.8000000006577, "tid": 1, "ts": 9434473, "pid": 1, "args": {"0":"CAB-f831cdc101382654e82419d2173f24f7"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 135.999999998603, "tid": 1, "ts": 9434536, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 37.5999999996566, "tid": 1, "ts": 9434547, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.89999999910651, "tid": 1, "ts": 9434585, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.500000000101863, "tid": 1, "ts": 9434595, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.80000000000291, "tid": 1, "ts": 9434595, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.8000000002212, "tid": 1, "ts": 9434597, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.1000000001513, "tid": 1, "ts": 9434609, "pid": 1, "args": {"0":"CAB-fdac73a362b411e40c2e0e1c0f1efb65"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 131.800000001022, "tid": 1, "ts": 9434673, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 29.8000000002503, "tid": 1, "ts": 9434684, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 12.0999999999185, "tid": 1, "ts": 9434715, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9434727, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.89999999929569, "tid": 1, "ts": 9434728, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.4000000014348, "tid": 1, "ts": 9434730, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.699999999546, "tid": 1, "ts": 9434742, "pid": 1, "args": {"0":"CAB-1c93584854439c864c5f70e621c8643a"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 136.599999999817, "tid": 1, "ts": 9434805, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 36.2999999997555, "tid": 1, "ts": 9434817, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.89999999910651, "tid": 1, "ts": 9434854, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 1.20000000060827, "tid": 1, "ts": 9434864, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.89999999929569, "tid": 1, "ts": 9434865, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.8000000002212, "tid": 1, "ts": 9434867, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 30.9999999990396, "tid": 1, "ts": 9434879, "pid": 1, "args": {"0":"CAB-e6b7cb55bb575a5d3b5b7dc64f1e5a79"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 157.199999999648, "tid": 1, "ts": 9434942, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 35.7000000003609, "tid": 1, "ts": 9434953, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 14.099999998507, "tid": 1, "ts": 9434989, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 10.5000000003201, "tid": 1, "ts": 9435003, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9435014, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.0999999999185, "tid": 1, "ts": 9435016, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.8000000006577, "tid": 1, "ts": 9435028, "pid": 1, "args": {"0":"CAB-f91efaee991978157524c322c4ef8609"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 139.299999998912, "tid": 1, "ts": 9435100, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 38.2000000008702, "tid": 1, "ts": 9435111, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.99999999839929, "tid": 1, "ts": 9435150, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.700000000506407, "tid": 1, "ts": 9435160, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 3.39999999960128, "tid": 1, "ts": 9435161, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 13.199999999415, "tid": 1, "ts": 9435164, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.8000000006577, "tid": 1, "ts": 9435178, "pid": 1, "args": {"0":"CAB-6f3e4e196922ffd2e350cb32aa62945f"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 137.399999999616, "tid": 1, "ts": 9435240, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 37.0999999995547, "tid": 1, "ts": 9435250, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.89999999910651, "tid": 1, "ts": 9435288, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9435298, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9435299, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.6000000000204, "tid": 1, "ts": 9435301, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.4999999991414, "tid": 1, "ts": 9435313, "pid": 1, "args": {"0":"CAB-cc967f4e98fcf323f78f1b61beec6cb6"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 135.699999998906, "tid": 1, "ts": 9435378, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 38.0999999997584, "tid": 1, "ts": 9435390, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.39999999900465, "tid": 1, "ts": 9435428, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.500000000101863, "tid": 1, "ts": 9435438, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9435439, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.7999999986059, "tid": 1, "ts": 9435441, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 29.3999999994412, "tid": 1, "ts": 9435454, "pid": 1, "args": {"0":"CAB-fee34c05f7a29ea05b3f772b2bd22160"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 136.599999999817, "tid": 1, "ts": 9435514, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 36.5999999994528, "tid": 1, "ts": 9435526, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 9.10000000112632, "tid": 1, "ts": 9435563, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.700000000506407, "tid": 1, "ts": 9435572, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.200000000812, "tid": 1, "ts": 9435573, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.5000000007276, "tid": 1, "ts": 9435575, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 31.3999999998487, "tid": 1, "ts": 9435588, "pid": 1, "args": {"0":"CAB-43b0ff8f1119e63cc303af1b4ba9666d"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 136.999999998807, "tid": 1, "ts": 9435651, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 39.600000000064, "tid": 1, "ts": 9435663, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 10.0999999995111, "tid": 1, "ts": 9435703, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9435713, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.90000000111468, "tid": 1, "ts": 9435714, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 12.6000000000204, "tid": 1, "ts": 9435716, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 30.1999999992404, "tid": 1, "ts": 9435728, "pid": 1, "args": {"0":"CAB-a43bd502b714aabf666ae149a10ad203"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 13354.9000000003, "tid": 1, "ts": 9435789, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 7314.70000000081, "tid": 1, "ts": 9436223, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 1427.49999999978, "tid": 1, "ts": 9443538, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 3.49999999889405, "tid": 1, "ts": 9444968, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 63.799999999901, "tid": 1, "ts": 9444971, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 834.100000000035, "tid": 1, "ts": 9445036, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 3210.39999999994, "tid": 1, "ts": 9445870, "pid": 1, "args": {"0":"CAB-adf3774999ee5413ebb61887d17f0472"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 966.599999999744, "tid": 1, "ts": 9449147, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 636.999999998807, "tid": 1, "ts": 9449204, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 45.0000000000728, "tid": 1, "ts": 9449841, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 1.0999999994965, "tid": 1, "ts": 9449887, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 5.09999999849242, "tid": 1, "ts": 9449888, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 25.7000000001426, "tid": 1, "ts": 9449893, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 153.09999999954, "tid": 1, "ts": 9449919, "pid": 1, "args": {"0":"CAB-416805a5fc37e327b8ca59f64f8665a2"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 2810.99999999969, "tid": 1, "ts": 9450114, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 2014.19999999962, "tid": 1, "ts": 9450176, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 144.000000000233, "tid": 1, "ts": 9452190, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 1.00000000020373, "tid": 1, "ts": 9452335, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 9.2000000004191, "tid": 1, "ts": 9452336, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 80.5999999993219, "tid": 1, "ts": 9452345, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 460.299999998824, "tid": 1, "ts": 9452426, "pid": 1, "args": {"0":"CAB-094d1b8f66ca8908a9a2e4512c6bc43a"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 3512.60000000002, "tid": 1, "ts": 9452926, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 2250.7999999998, "tid": 1, "ts": 9453035, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 261.499999998705, "tid": 1, "ts": 9455286, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.89999999909196, "tid": 1, "ts": 9455548, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 12.2000000010303, "tid": 1, "ts": 9455549, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 131.299999999101, "tid": 1, "ts": 9455561, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 709.399999999732, "tid": 1, "ts": 9455692, "pid": 1, "args": {"0":"CAB-2bdfad83d9f4918423d4908ad3da4879"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 2325.69999999942, "tid": 1, "ts": 9456451, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 1362.99999999937, "tid": 1, "ts": 9456539, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 192.600000000311, "tid": 1, "ts": 9457902, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.799999999799184, "tid": 1, "ts": 9458095, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 10.5999999996129, "tid": 1, "ts": 9458095, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 93.9999999991414, "tid": 1, "ts": 9458106, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 523.499999999331, "tid": 1, "ts": 9458200, "pid": 1, "args": {"0":"CAB-1838cc8a81d7bf82afd1f357b084bbd2"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 565.000000000509, "tid": 1, "ts": 9458778, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 366.199999998571, "tid": 1, "ts": 9458799, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 21.0000000006403, "tid": 1, "ts": 9459165, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.700000000506407, "tid": 1, "ts": 9459186, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 3.6999999992986, "tid": 1, "ts": 9459187, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 16.299999999319, "tid": 1, "ts": 9459191, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 100.599999999758, "tid": 1, "ts": 9459208, "pid": 1, "args": {"0":"CAB-8806252f344c95330e5b8fa514459c5d"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 479.100000000471, "tid": 1, "ts": 9459343, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 144.000000000233, "tid": 1, "ts": 9459385, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 42.4000000002707, "tid": 1, "ts": 9459529, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9459571, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 3.19999999919673, "tid": 1, "ts": 9459572, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 66.1999999992986, "tid": 1, "ts": 9459575, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 125.299999999697, "tid": 1, "ts": 9459642, "pid": 1, "args": {"0":"CAB-1ab8a111d8f458c4085b1fa0aee01764"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 2225.50000000047, "tid": 1, "ts": 9459824, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 755.999999999403, "tid": 1, "ts": 9460192, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 206.300000001647, "tid": 1, "ts": 9460948, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.699999998687417, "tid": 1, "ts": 9461155, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 7.49999999970896, "tid": 1, "ts": 9461156, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 421.000000000276, "tid": 1, "ts": 9461163, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 425.29999999897, "tid": 1, "ts": 9461585, "pid": 1, "args": {"0":"CAB-d5ccfdccafc31382140712801a9dad7b"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 200.10000000002, "tid": 1, "ts": 9462051, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 63.7000000006083, "tid": 1, "ts": 9462072, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 14.9000000001251, "tid": 1, "ts": 9462136, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9462151, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.9000000013184, "tid": 1, "ts": 9462152, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 21.3999999996304, "tid": 1, "ts": 9462155, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 42.699999999968, "tid": 1, "ts": 9462176, "pid": 1, "args": {"0":"CAB-247d674bc77081213212f46f9da085a9"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 956.500000000233, "tid": 1, "ts": 9462251, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 464.100000001054, "tid": 1, "ts": 9462274, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 107.199999998556, "tid": 1, "ts": 9462738, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 3.39999999960128, "tid": 1, "ts": 9462846, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 5.60000000041327, "tid": 1, "ts": 9462849, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 71.2000000003172, "tid": 1, "ts": 9462855, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 248.900000000503, "tid": 1, "ts": 9462926, "pid": 1, "args": {"0":"CAB-014000ed2538cb87d1aa4612be612002"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 94.9999999993452, "tid": 1, "ts": 9463209, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 19.2000000006374, "tid": 1, "ts": 9463219, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 8.10000000092259, "tid": 1, "ts": 9463238, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9463247, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.69999999889114, "tid": 1, "ts": 9463247, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 6.69999999990978, "tid": 1, "ts": 9463249, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 17.9000000007363, "tid": 1, "ts": 9463256, "pid": 1, "args": {"0":"CAB-072557f1ce298afd74e97c59b9715693"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 92.000000000553, "tid": 1, "ts": 9463304, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 18.3999999990192, "tid": 1, "ts": 9463315, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 6.9999999996071, "tid": 1, "ts": 9463333, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.500000000101863, "tid": 1, "ts": 9463340, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.70000000071013, "tid": 1, "ts": 9463341, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 5.99999999940337, "tid": 1, "ts": 9463343, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 16.9999999998254, "tid": 1, "ts": 9463349, "pid": 1, "args": {"0":"CAB-caa8af56592b882a47843c9c064c10f5"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 464.400000000751, "tid": 1, "ts": 9463396, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 260.700000000725, "tid": 1, "ts": 9463415, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 11.7000000009284, "tid": 1, "ts": 9463676, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.500000000101863, "tid": 1, "ts": 9463688, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 9.2000000004191, "tid": 1, "ts": 9463688, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 77.8000000009342, "tid": 1, "ts": 9463698, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 53.4000000006927, "tid": 1, "ts": 9463776, "pid": 1, "args": {"0":"CAB-5236ed27db033a67d2424e5bbf7d2f57"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 857.800000001589, "tid": 1, "ts": 9463862, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 321.799999999712, "tid": 1, "ts": 9463929, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 102.199999999357, "tid": 1, "ts": 9464251, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.799999999799184, "tid": 1, "ts": 9464354, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 4.60000000020955, "tid": 1, "ts": 9464355, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 126.200000000608, "tid": 1, "ts": 9464359, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 200.10000000002, "tid": 1, "ts": 9464486, "pid": 1, "args": {"0":"CAB-293010a51b67c0ed3419395963daf4da"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 301.499999999578, "tid": 1, "ts": 9464720, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 99.2000000005646, "tid": 1, "ts": 9464747, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 31.6000000002532, "tid": 1, "ts": 9464847, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9464878, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.50000000050932, "tid": 1, "ts": 9464879, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 35.9000000007654, "tid": 1, "ts": 9464882, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 70.400000000518, "tid": 1, "ts": 9464918, "pid": 1, "args": {"0":"CAB-133eabf050b20095f17f1a22a2f1fcdd"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 107.099999999264, "tid": 1, "ts": 9465023, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 19.2999999999302, "tid": 1, "ts": 9465034, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 8.79999999961001, "tid": 1, "ts": 9465053, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.59999999939464, "tid": 1, "ts": 9465062, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.10000000151922, "tid": 1, "ts": 9465063, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 9.79999999981374, "tid": 1, "ts": 9465065, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 24.3000000009488, "tid": 1, "ts": 9465075, "pid": 1, "args": {"0":"CAB-69e125884af9026945f738044e583eec"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 90.0999999994383, "tid": 1, "ts": 9465130, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 15.8000000010361, "tid": 1, "ts": 9465139, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 6.19999999980791, "tid": 1, "ts": 9465155, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.89999999909196, "tid": 1, "ts": 9465162, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 1.89999999929569, "tid": 1, "ts": 9465163, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 6.79999999920256, "tid": 1, "ts": 9465165, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 18.3000000015454, "tid": 1, "ts": 9465172, "pid": 1, "args": {"0":"CAB-60441f56598946a6a1a300127e51a638"}}
+,{"name": "GetCacheEntry", "ph": "X", "dur": 131.69999999991, "tid": 1, "ts": 9465221, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Gather Objects AssetBundleWriteOperation", "ph": "X", "dur": 33.1000000005588, "tid": 1, "ts": 9465232, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Hashing Command", "ph": "X", "dur": 10.2000000006228, "tid": 1, "ts": 9465265, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Hashing UsageSet", "ph": "X", "dur": 0.500000000101863, "tid": 1, "ts": 9465276, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Hashing ReferenceMap", "ph": "X", "dur": 2.00000000040745, "tid": 1, "ts": 9465276, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Hashing Info", "ph": "X", "dur": 11.6999999991094, "tid": 1, "ts": 9465279, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Hashing Objects", "ph": "X", "dur": 30.800000000454, "tid": 1, "ts": 9465290, "pid": 1, "args": {"0":"CAB-2e2c373d8fec435f60d045f575b408da"}}
+,{"name": "Load Cached Data", "ph": "X", "dur": 104086.499999999, "tid": 1, "ts": 9467038, "pid": 1}
+,{"name": "LoadCachedData", "ph": "X", "dur": 104064.899999999, "tid": 1, "ts": 9467040, "pid": 1, "args": {"0":"42 items", "1":"Time spent deserializing: 104ms", "2":"Local Cache hit count: 41"}}
+,{"name": "Read and deserialize cache info", "ph": "X", "dur": 104055.6, "tid": 1, "ts": 9467044, "pid": 1}
+,{"name": "Check for changed dependencies", "ph": "X", "dur": 12.5000000007276, "tid": 1, "ts": 9571105, "pid": 1, "args": {"0":"Unchanged dependencies count: 41"}}
+,{"name": "Process Entries", "ph": "X", "dur": 77863.1999999998, "tid": 1, "ts": 9571480, "pid": 1}
+,{"name": "Writing AssetBundleWriteOperation", "ph": "X", "dur": 59885.0000000002, "tid": 1, "ts": 9572423, "pid": 1, "args": {"0":"CAB-d39b70002079e7ee853b41a59bb7fe4b"}}
+,{"name": "Process Cached Entries", "ph": "X", "dur": 138.899999999921, "tid": 1, "ts": 9649346, "pid": 1}
+,{"name": "Saving to Cache", "ph": "X", "dur": 6497.70000000171, "tid": 1, "ts": 9650644, "pid": 1}
+,{"name": "Creating Cached Infos", "ph": "X", "dur": 1052.40000000049, "tid": 1, "ts": 9650647, "pid": 1}
+,{"name": "SaveCachedData", "ph": "X", "dur": 5434.99999999949, "tid": 1, "ts": 9651702, "pid": 1, "args": {"0":"Saving 1 infos"}}
+,{"name": "SerializingCacheInfos[1]", "ph": "X", "dur": 5264.00000000103, "tid": 1, "ts": 9651870, "pid": 1}
+,{"name": "ArchiveAndCompressBundles", "ph": "X", "dur": 726478.800000001, "tid": 1, "ts": 9657278, "pid": 1}
+,{"name": "CreateWorkItems", "ph": "X", "dur": 2523.90000000014, "tid": 1, "ts": 9661166, "pid": 1}
+,{"name": "Creating Cache Entries", "ph": "X", "dur": 2394.29999999993, "tid": 1, "ts": 9663696, "pid": 1}
+,{"name": "Load Cached Data", "ph": "X", "dur": 119820.299999999, "tid": 1, "ts": 9666091, "pid": 1}
+,{"name": "LoadCachedData", "ph": "X", "dur": 119795.599999999, "tid": 1, "ts": 9666093, "pid": 1, "args": {"0":"42 items", "1":"Time spent deserializing: 119ms", "2":"Local Cache hit count: 41"}}
+,{"name": "Read and deserialize cache info", "ph": "X", "dur": 119784.000000001, "tid": 1, "ts": 9666096, "pid": 1}
+,{"name": "Check for changed dependencies", "ph": "X", "dur": 13.4999999991123, "tid": 1, "ts": 9785889, "pid": 1, "args": {"0":"Unchanged dependencies count: 41"}}
+,{"name": "CopyingCachedFiles", "ph": "X", "dur": 93586.1000000004, "tid": 1, "ts": 9786686, "pid": 1}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1217.79999999853, "tid": 1, "ts": 9787230, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\f7\\f73fec7b31121ce8f85c75a4e3ff8fa8\\e6a8f7f8730ffb3a8e36667d5f0b0fc4\\f79bfb4fb8c97cb5e8434a0169cbd1c2 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_actor.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 3550.49999999937, "tid": 1, "ts": 9788595, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\d2\\d2bc29c16625e23a12dc3d0caf4273de\\00a6aa495b64b08469198d99c1bb293f\\df1959f295d436e1bcd7362f0e003665 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_audios.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 911.000000000058, "tid": 1, "ts": 9792325, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\03\\03ac5f09f0453d6ab5351d14786faf02\\a73dde16f5f214cbb56798a728fa7468\\b617a5a68bcc79f66267aa54c08999e8 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_configs_bytes.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 795.29999999977, "tid": 1, "ts": 9793400, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\80\\80f105f425f210c32db1c476473bff5c\\0e5993ab2a286b24528db27d5be14f64\\be8be645ec8617903de61c4fd748cecc -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_configs.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 678.299999999581, "tid": 1, "ts": 9794290, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\e9\\e92f2d4ee5acbb0f25f54d7d01db544c\\52bd72de16726226f58f655c843575ab\\582eeb0fb4a69b9fb9daa4e400dd865e -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_configs_urp.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 20647.8999999999, "tid": 1, "ts": 9795278, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\75\\75789e70fed245f2a8f1e492e6017522\\a303b56aaf5872e7c3033ea67db10a79\\5ecb9db3d4f427803d6fec1a7dc1cdba -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_fonts.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1250, "tid": 1, "ts": 9816104, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\f8\\f862d3940b387726fdb090e0a6d05e1e\\88af4825ec1e33be9321f5274bdf1ac9\\866906be144cd072c82445634a4c4353 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_materials.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1087.90000000045, "tid": 1, "ts": 9817518, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\51\\5124e308cc3a8149a388b1cf49f6b89f\\a1aad635854c1aa18bb292d9790c52f0\\fcc51907ba822421e92bc3ec261e08f3 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_scenes.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 976.899999999659, "tid": 1, "ts": 9818780, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\68\\68df0cd124da8c59d1fd6813c6078896\\af4338490b1013e906bfcf550cf05e79\\d00ce80f56595d8f474213da534f7110 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_battlemainui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1253.1999999992, "tid": 1, "ts": 9820008, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\6e\\6efcc198d5bf018d23cae881f073a39b\\b3debf1de4e292eafc7ee23095b3fcd5\\ea1b2c1b49bfe734b6fc8afd506f3845 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_btnaction_highlight.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1130.10000000031, "tid": 1, "ts": 9821485, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\e7\\e769abea91567e7828a905c06bc15382\\4ba324f0e7c0f07511374cd36c532aff\\99d52bc3d862ef2fc9cd1ef197e490ce -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_btnaction_normal.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1262.79999999861, "tid": 1, "ts": 9822739, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\5e\\5e6461c9d00a59d8a45661aecf9ef114\\908d295e5e2fd03d547ce8f042ca8fb9\\57f40ad0d5bd8697791e2cb07af858ab -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_btncancel_normal.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1672.20000000088, "tid": 1, "ts": 9824118, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\65\\65c92043a1eb82b9acd963542842b171\\3c727991f54514fdf2b3087bbf83ad33\\9c1698a07fa0088071247af04935b615 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_btnclose_hover.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1461.00000000115, "tid": 1, "ts": 9826068, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\3a\\3a7ab48775becb60477e2a5cb5dc33a8\\f5891c5c89a87b9a59f6691b0ffb0e37\\f831cdc101382654e82419d2173f24f7 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_btnclose_normal.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1578.89999999861, "tid": 1, "ts": 9827645, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\e4\\e4aa6c866e03323b37c72f260f7ec288\\4d8d0624d3bc4f7a03a47e292d18a9b0\\fdac73a362b411e40c2e0e1c0f1efb65 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_btnconfirm_normal.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1840.59999999954, "tid": 1, "ts": 9829356, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\41\\41ecfc1736aadb55b36cba6da7472100\\7f777ce684a6c54913c3167d6bcdc725\\1c93584854439c864c5f70e621c8643a -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_dialogpanel_parchment.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1459.20000000115, "tid": 1, "ts": 9831384, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\c1\\c13b517d1abce73a636ca733c242fe28\\16fd658b55bb13129c03bdc9dc3af98c\\e6b7cb55bb575a5d3b5b7dc64f1e5a79 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tipbtnaction_highlight.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1339.20000000035, "tid": 1, "ts": 9833007, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\bc\\bcb35d72e9f8ab61294ab216584b97c7\\eb658bd460420a29ddd3d9b024abc9c6\\f91efaee991978157524c322c4ef8609 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tipbtnaction_normal.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1426.90000000039, "tid": 1, "ts": 9834630, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\c9\\c9d258c6d71a69138fe71bfbd24daa4f\\89895d4b00715db5b555c166ecf9e9db\\6f3e4e196922ffd2e350cb32aa62945f -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tipbtncancel.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1664.49999999895, "tid": 1, "ts": 9836197, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\5b\\5b923f09d23cf1842c3fc8ae10bfad03\\8d1423776808568eda56e743f2a3d2a6\\cc967f4e98fcf323f78f1b61beec6cb6 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tipbtnclose_hover.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1186.90000000061, "tid": 1, "ts": 9837980, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\ec\\ec710138939ccb87e9c02519f0e3b3ac\\3c92981d7f902ba71c5e04d5a3bc0070\\fee34c05f7a29ea05b3f772b2bd22160 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tipbtnclose_normal.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1246.59999999858, "tid": 1, "ts": 9839265, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\fa\\fa84362782de3e13aefc61847d08bfae\\745732840a106f0c2af3063d4033bf88\\43b0ff8f1119e63cc303af1b4ba9666d -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tipbtnconfirm.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1308.29999999878, "tid": 1, "ts": 9840599, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\c7\\c7631b6d6d7ef730cc8ee452053daff2\\f3149e02d10e837a54b2f95c102323b6\\a43bd502b714aabf666ae149a10ad203 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_common_ui_tippanel_small_dark.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1002.40000000122, "tid": 1, "ts": 9842039, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\02\\0214fb9a0753817e424c96b209bafc89\\31ed04cab4cd9c9a2b4eb9b12b236862\\adf3774999ee5413ebb61887d17f0472 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_configui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 804.100000001199, "tid": 1, "ts": 9843147, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\00\\00f4acf4f0d0c81611a53fd560606f9a\\dbbc1a331d0225be6b5671b4a97b1b4f\\416805a5fc37e327b8ca59f64f8665a2 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_dialogui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 826.499999999214, "tid": 1, "ts": 9844054, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\da\\da4dc5be39fcc76941b0d218dc5c6808\\04472897b31608961437763b9d65efe3\\094d1b8f66ca8908a9a2e4512c6bc43a -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_loginui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 689.000000000306, "tid": 1, "ts": 9844980, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\31\\314e46f0b0c7851db355a713bec41d17\\ddc1eeb020b0137cc9eeda50d2013464\\2bdfad83d9f4918423d4908ad3da4879 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_mainmenuui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 681.000000000495, "tid": 1, "ts": 9845785, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\04\\04de9eb75e75c55d37c8e941675fd136\\56499e86726a860f30b1f8922d684ec7\\1838cc8a81d7bf82afd1f357b084bbd2 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_settingvolumerow.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 627.0999999997, "tid": 1, "ts": 9846551, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\53\\531a0a8f828060ff1427e9b6dc8529f8\\b79e9a526366e058a1e4d7f704446dbb\\8806252f344c95330e5b8fa514459c5d -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_ui_testui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1100.00000000036, "tid": 1, "ts": 9847262, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\17\\1791806ffc54d49a2830f4fe01242236\\b2f87aef3ba495b1c7928290a25a492c\\1ab8a111d8f458c4085b1fa0aee01764 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_uiraw_atlas_battle.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 18311.8000000013, "tid": 1, "ts": 9848467, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\aa\\aa8d93019c58ee97bfb1e1eb34577a5d\\0dd5a3630bcfa552bc36fc852708a267\\d5ccfdccafc31382140712801a9dad7b -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_uiraw_raw_background.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1051.69999999998, "tid": 1, "ts": 9866947, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\bb\\bb80dcf68ca68f2d0f16da3c53af1298\\1de2759226e77c459c880fcde17d25d0\\247d674bc77081213212f46f9da085a9 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_uiraw_raw_ui.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1416.69999999976, "tid": 1, "ts": 9868112, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\ef\\ef1f2579a1f1af24398f09e1e4dcd424\\46cb790c7e4cb3c1a4c3e20ad134878a\\014000ed2538cb87d1aa4612be612002 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_unityshaders.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 902.200000000448, "tid": 1, "ts": 9869634, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\86\\869514a8a579bfd991cfa1c5ddf497b6\\fbe925a4a9e82655c12c1db2e5193c19\\072557f1ce298afd74e97c59b9715693 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_bluenoise64_l.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 790.499999999156, "tid": 1, "ts": 9870643, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\30\\3077bcf0ea087b1566de5a84b9508ebe\\34f43ccc0e13e1e4cb5840780827ea9c\\caa8af56592b882a47843c9c064c10f5 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_shaders_debug.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 659.40000000046, "tid": 1, "ts": 9871553, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\25\\25733300ca8dda586273d87b7c4d125b\\b29a3dedfc541b752612f136166163d0\\5236ed27db033a67d2424e5bbf7d2f57 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_runtime_data.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 806.400000001304, "tid": 1, "ts": 9872299, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\b5\\b56b775d8089c29a736c3064435c6eb0\\c520434f061dd06f1205c4be1eea0b0e\\293010a51b67c0ed3419395963daf4da -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_bluenoise16_l.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 3020.40000000125, "tid": 1, "ts": 9873190, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\b2\\b2dcd072dfac61d5cbdc4827542dc2a9\\7f0aab9ba3c731a84a719d4bab3bcc10\\133eabf050b20095f17f1a22a2f1fcdd -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_filmgrain.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 959.399999999732, "tid": 1, "ts": 9876336, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\9e\\9e855363c26eb448b23bf3860611f394\\95d4ac9e16bffd752ccfc849f4f5883f\\69e125884af9026945f738044e583eec -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_textures_smaa.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 870.199999999386, "tid": 1, "ts": 9877393, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\d4\\d4c12b9df3f458bc6666bb0556a5ccfb\\d8a899de0b01dab9898d6a21707df99d\\60441f56598946a6a1a300127e51a638 -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_packages_com_unity_render-pipelines_universal_textures.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1825.29999999861, "tid": 1, "ts": 9878429, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\17\\17259ce6f43a1f17feec8596aeb0b380\\efbe0aeec8dcf03e90647c3c1f3d8e10\\2e2c373d8fec435f60d045f575b408da -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_share_assets_assetraw_textures_floor.bundle"}}
+,{"name": "ArchiveItems", "ph": "X", "dur": 493650.399999999, "tid": 1, "ts": 9880732, "pid": 1, "args": {"0":"Archiving 1 Bundles"}}
+,{"name": "ArchiveSingleItem", "ph": "X", "dur": 491517.7, "tid": 13130, "ts": 9880760, "pid": 1, "args": {"0":"defaultpackage_assets_assetraw_dll.bundle"}}
+,{"name": "Copying From Cache", "ph": "X", "dur": 1541.30000000004, "tid": 13130, "ts": 10370721, "pid": 1, "args": {"0":"E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Library\\BuildCache\\d7\\d7b4290445e1f15d36b932bc0ae995ed\\b2dd655dc06ebac04b67a57aeb33a3b1\\d39b70002079e7ee853b41a59bb7fe4b -> E:\\Kayano Project\\TEngine-TEngine6.2.1\\KayanoClient\\Builds\\StandaloneWindows64\\DefaultPackage\\OutputCache\\defaultpackage_assets_assetraw_dll.bundle"}}
+,{"name": "PostArchiveProcessing", "ph": "X", "dur": 3525.70000000014, "tid": 1, "ts": 10375071, "pid": 1}
+,{"name": "Copying To Cache", "ph": "X", "dur": 3226.70000000107, "tid": 1, "ts": 10378600, "pid": 1}
+,{"name": "SaveCachedData", "ph": "X", "dur": 2992.09999999948, "tid": 1, "ts": 10378827, "pid": 1, "args": {"0":"Saving 1 infos"}}
+,{"name": "SerializingCacheInfos[1]", "ph": "X", "dur": 2899.60000000065, "tid": 1, "ts": 10378917, "pid": 1}
+,{"name": "AppendBundleHash", "ph": "X", "dur": 303.299999999581, "tid": 1, "ts": 10383845, "pid": 1}
+,{"name": "GenerateLinkXml", "ph": "X", "dur": 20033.5000000014, "tid": 1, "ts": 10384191, "pid": 1}
+,{"name": "PostWritingCallback", "ph": "X", "dur": 111.999999999171, "tid": 1, "ts": 10404315, "pid": 1}
+]
+}

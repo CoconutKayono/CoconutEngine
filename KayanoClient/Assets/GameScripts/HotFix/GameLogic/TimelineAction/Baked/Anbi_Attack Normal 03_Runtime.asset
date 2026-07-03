@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6133628411536391424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b944227304688ef4ca511ccb9ea2e887, type: 3}
+  m_Name: NotifyState_PlayParticle_0.517_0.250
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayParticleStateEntry
+  start: 0.51666665
+  length: 0.25
+  prefab: {fileID: 1872147318604286, guid: 5bea49531fc500c408823a2e2863106f, type: 3}
+  localPosition: {x: 0, y: 0.55, z: 0}
+  localRotation: {x: 0, y: 0, z: 0, w: 1}
+  localScale: {x: 1, y: 1, z: 1}
+--- !u!114 &-3392214363586677665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8e48412bbe75742873a018bbc35905, type: 3}
+  m_Name: NotifyState_Box_0.517_0.233
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedBoxStateEntry
+  start: 0.51666665
+  length: 0.23333333
+  boxType: 0
+  boxShape: 0
+  center: {x: 0, y: 1, z: 1.5}
+  radius: 1
+  size: {x: 2, y: 2, z: 2}
+  hitStrength: 0
+  hitId: 10030
+  particlePrefab: {fileID: 0}
+  setParticleRot: 0
+  rotValue: 0
+  rotMaxValue: 0
+  hitGatherDist: 0
+  hitAudio: {fileID: 8300000, guid: be7658528d067aa4ab612584504b3060, type: 3}
+  hitstopDuration: 0.05
+  hitstopSpeed: 0
+--- !u!114 &-2076373987342009001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_0.700_0.333
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 0.7
+  length: 0.33333334
+  intentTransition:
+    actionName: Attack Normal 04 Perfect
+    fadeDuration: 0
+    intent: 8
+    openTime: 0
+--- !u!114 &-1513297461409150013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b944227304688ef4ca511ccb9ea2e887, type: 3}
+  m_Name: NotifyState_PlayParticle_0.233_0.233
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayParticleStateEntry
+  start: 0.23333333
+  length: 0.23333333
+  prefab: {fileID: 1872147318604286, guid: 5bea49531fc500c408823a2e2863106f, type: 3}
+  localPosition: {x: 0, y: 0.55, z: 0}
+  localRotation: {x: 0, y: 0, z: 0, w: 1}
+  localScale: {x: 1, y: 1, z: 1}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Attack Normal 03_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 10300
+  actionName: Attack Normal 03
+  primaryIntent: 8
+  isLoop: 0
+  enableRotation: 0
+  enableRecenter: 0
+  enableLookAtMonster: 1
+  clip: {fileID: 1827226128182048838, guid: 5ceca197f7b8abf4a9df507fcc303f1d, type: 3}
+  inheritActionName: Attack Normal 01
+  finishTransition:
+    actionName: Attack Normal 03 End
+    fadeDuration: 0
+  intentTransitions: []
+  signalTransitions: []
+  notifies: []
+  notifyStates:
+  - {fileID: 5483556295091160418}
+  - {fileID: -1513297461409150013}
+  - {fileID: 1715743215156181606}
+  - {fileID: -6133628411536391424}
+  - {fileID: -3392214363586677665}
+  - {fileID: 7382312307054686384}
+  - {fileID: -2076373987342009001}
+--- !u!114 &1715743215156181606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8e48412bbe75742873a018bbc35905, type: 3}
+  m_Name: NotifyState_Box_0.233_0.233
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedBoxStateEntry
+  start: 0.23333333
+  length: 0.23333333
+  boxType: 0
+  boxShape: 0
+  center: {x: 0, y: 1, z: 1.5}
+  radius: 1
+  size: {x: 2, y: 2, z: 2}
+  hitStrength: 0
+  hitId: 10030
+  particlePrefab: {fileID: 0}
+  setParticleRot: 0
+  rotValue: 0
+  rotMaxValue: 0
+  hitGatherDist: 0
+  hitAudio: {fileID: 8300000, guid: be7658528d067aa4ab612584504b3060, type: 3}
+  hitstopDuration: 0.05
+  hitstopSpeed: 0
+--- !u!114 &5483556295091160418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.035_0.998
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.035011325
+  length: 0.998322
+  clips:
+  - {fileID: 8300000, guid: 003aa5abacf93a94089bd8c2ef28fff1, type: 3}
+  dontPlayProbability: 0
+--- !u!114 &7382312307054686384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_0.617_0.083
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 0.6166667
+  length: 0.083333336
+  intentTransition:
+    actionName: Attack Normal 04
+    fadeDuration: 0
+    intent: 8
+    openTime: 0

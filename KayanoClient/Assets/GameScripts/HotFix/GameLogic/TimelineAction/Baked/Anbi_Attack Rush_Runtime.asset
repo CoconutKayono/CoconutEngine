@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4690168645433152853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_1.067_2.267
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 1.0666667
+  length: 2.2666667
+  intentTransition:
+    actionName: Evade Front
+    fadeDuration: 0.25
+    intent: 2
+    openTime: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ead273cc75c26449991a8c0515c5ff, type: 3}
+  m_Name: Anbi_Attack Rush_Runtime
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.KayanoActionRuntimeSO
+  actionId: 1000
+  actionName: Attack Rush
+  primaryIntent: 8
+  isLoop: 0
+  enableRotation: 0
+  enableRecenter: 0
+  enableLookAtMonster: 1
+  clip: {fileID: 1827226128182048838, guid: 29dcee993c05f754086f316d3fad3fce, type: 3}
+  inheritActionName: 
+  finishTransition:
+    actionName: Idle
+    fadeDuration: 0
+  intentTransitions: []
+  signalTransitions: []
+  notifies: []
+  notifyStates:
+  - {fileID: 8878121014951149107}
+  - {fileID: 9126368052924572299}
+  - {fileID: 2325364078426065647}
+  - {fileID: 6337463920217346355}
+  - {fileID: 6638317529510123882}
+  - {fileID: -4690168645433152853}
+  - {fileID: 1213282463223934315}
+--- !u!114 &1213282463223934315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_1.067_2.267
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 1.0666667
+  length: 2.2666667
+  intentTransition:
+    actionName: Walk Start
+    fadeDuration: 0.25
+    intent: 1
+    openTime: 0
+--- !u!114 &2325364078426065647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b944227304688ef4ca511ccb9ea2e887, type: 3}
+  m_Name: NotifyState_PlayParticle_0.300_0.283
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayParticleStateEntry
+  start: 0.3
+  length: 0.28333333
+  prefab: {fileID: 1872147318604286, guid: 5bea49531fc500c408823a2e2863106f, type: 3}
+  localPosition: {x: 0, y: 0.55, z: 0.4}
+  localRotation: {x: 0, y: 0, z: 0, w: 1}
+  localScale: {x: 1, y: 1, z: 1}
+--- !u!114 &6337463920217346355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_1.067_2.267
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 1.0666667
+  length: 2.2666667
+  intentTransition:
+    actionName: Attack Normal 01
+    fadeDuration: 0.25
+    intent: 8
+    openTime: 0
+--- !u!114 &6638317529510123882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1565b872bc2d5ab47974134140ce43d4, type: 3}
+  m_Name: NotifyState_IntentTransition_1.067_2.267
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedIntentTransitionStateEntry
+  start: 1.0666667
+  length: 2.2666667
+  intentTransition:
+    actionName: Evade Back
+    fadeDuration: 0.25
+    intent: 4
+    openTime: 0
+--- !u!114 &8878121014951149107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48fb2226170ebe04baa64a3650c05238, type: 3}
+  m_Name: NotifyState_PlayAudio_0.133_0.998
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayAudioStateEntry
+  start: 0.13333334
+  length: 0.998322
+  clips:
+  - {fileID: 8300000, guid: 003aa5abacf93a94089bd8c2ef28fff1, type: 3}
+  dontPlayProbability: 0
+--- !u!114 &9126368052924572299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b944227304688ef4ca511ccb9ea2e887, type: 3}
+  m_Name: NotifyState_PlayParticle_0.133_0.167
+  m_EditorClassIdentifier: GameLogic::KayanoAction.Runtime.BakedPlayParticleStateEntry
+  start: 0.13333334
+  length: 0.16666667
+  prefab: {fileID: 1872147318604286, guid: 5bea49531fc500c408823a2e2863106f, type: 3}
+  localPosition: {x: 0, y: 0.55, z: 0.4}
+  localRotation: {x: 0, y: 0, z: 0, w: 1}
+  localScale: {x: 1, y: 1, z: 1}

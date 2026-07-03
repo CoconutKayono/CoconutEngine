@@ -1,0 +1,20 @@
+---
+description: TEngine 框架开发工作流与编码红线
+alwaysApply: true
+---
+
+# TEngine 开发规范
+
+处理本仓库代码前，先判断任务等级（L1-L4）。L2 及以上必须先查阅 `tengine-dev` skill 的 references 文档。
+
+## 红线
+
+- IO 用 `UniTask`，禁止同步资源加载
+- 通过 `GameModule.XXX` 访问模块
+- `LoadAssetAsync` 必须配对 `UnloadAsset`
+- 业务逻辑放在 `GameScripts/HotFix/`
+- 全局事件用 `GameEvent`，UI 内用 `AddUIEvent`
+
+## 变更管理
+
+较大功能用 OpenSpec：`/opsx-propose` → `/opsx-apply` → `/opsx-archive`

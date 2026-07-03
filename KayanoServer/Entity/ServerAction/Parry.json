@@ -1,0 +1,18 @@
+﻿{
+  "actionName": "Parry",
+  "duration": 0.6666667,
+  "isLoop": false,
+  "moveSpeed": 0,
+  "hitBoxes": [
+    {
+      "hitId": 10100,
+      "start": 0.2,
+      "end": 0.3,
+      "shape": "Sphere",
+      "centerX": 0,
+      "centerY": 1,
+      "centerZ": 1.5,
+      "radius": 1
+    }
+  ]
+}
