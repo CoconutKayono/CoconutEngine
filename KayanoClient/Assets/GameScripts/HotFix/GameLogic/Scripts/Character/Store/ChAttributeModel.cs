@@ -7,7 +7,7 @@ namespace GameLogic
     /// <summary>
     /// 角色属性模型 — HP、能量、失衡等资源与 Luban 属性字典。
     /// </summary>
-    public class CharacterAttributeModel
+    public class ChAttributeModel
     {
         #region Attributes
         private int _configId;
@@ -38,7 +38,7 @@ namespace GameLogic
         public event Action<string, float> OnResourceChanged;
         #endregion
 
-        public CharacterAttributeModel(int configId, Dictionary<int, float> attributes)
+        public ChAttributeModel(int configId, Dictionary<int, float> attributes)
         {
             _configId = configId;
             _attributes = attributes;

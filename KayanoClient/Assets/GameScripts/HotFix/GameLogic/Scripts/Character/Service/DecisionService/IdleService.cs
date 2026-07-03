@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using TEngine;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ namespace GameLogic
     {
         public IdleService() : base(EIntentAction.None) { }
 
-        protected override bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
             // Idle 没有特殊的 ActionType 过滤，但保持结构一致
             return config.ActionType == EActionType.Idle;

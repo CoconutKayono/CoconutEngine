@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using KayanoAction.Runtime;
 using TEngine;
 using UnityEngine;
@@ -12,16 +12,14 @@ namespace GameLogic
     {
         public SpecialAttackService() : base(EIntentAction.SpecialAttack) { }
 
-        protected override bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
-            // 1. 只处理 EnhancedSpecial 逻辑类型
             if (config.ActionType != EActionType.EnhancedSpecial)
             {
                 return false;
             }
 
-            // 2. 检查能量是否充足
-            var characterAttributes = module.CharacterAttributes;
+            var characterAttributes = store.ChAttribute;
             if (characterAttributes.CurrentEnergy < config.EnergyCost)
             {
                 Log.Debug($"[SpecialAttackService] 能量不足！当前: {characterAttributes.CurrentEnergy}, 需要: {config.EnergyCost}");
@@ -31,7 +29,7 @@ namespace GameLogic
         }
 
         protected override ExecutableIntent? CreateExecutableIntent(
-            CharacterModule module,
+            CharacterStore store,
             int actionId,
             CommandTransitionInfo info,
             ChActionConfig config,
@@ -39,7 +37,7 @@ namespace GameLogic
         {
             return new ExecutableIntent
             {
-                InstanceId = module.InstanceId,
+                InstanceId = store.InstanceId,
                 ActionId = actionId,
                 ActionName = info.actionName,
                 Priority = config.Priority,

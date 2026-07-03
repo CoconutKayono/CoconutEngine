@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using KayanoAction.Runtime;
 using System;
 using TEngine;
@@ -28,10 +28,10 @@ namespace GameLogic
         {
             if (intent.Action != _command) return;
 
-            var module = CharacterManager.Instance.GetUnit(intent.InstanceId);
-            if (module == null) return;
+            var store = CharacterModule.Instance.GetUnit(intent.InstanceId);
+            if (store == null) return;
 
-            var actionState = module.ActionState;
+            var actionState = store.ChActionState;
             if (actionState == null) return;
 
             if (!actionState.HasRunningCommand(_command)) return;
@@ -58,13 +58,13 @@ namespace GameLogic
                 if (config == null) continue;
 
                 // 子类重写此方法实现具体逻辑
-                if (!CheckCondition(module, config, intent))
+                if (!CheckCondition(store, config, intent))
                 {
                     continue;
                 }
 
                 // 子类可重写此方法自定义 ExecutableIntent 构造
-                var executable = CreateExecutableIntent(module, actionId, info, config, intent);
+                var executable = CreateExecutableIntent(store, actionId, info, config, intent);
                 if (executable.HasValue)
                 {
                     actionState.AddPendingExecutableIntent(executable.Value);
@@ -75,7 +75,7 @@ namespace GameLogic
         /// <summary>
         /// 子类实现：检查资源/条件是否满足
         /// </summary>
-        protected virtual bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected virtual bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
             return true;
         }
@@ -84,7 +84,7 @@ namespace GameLogic
         /// 子类可重写：自定义 ExecutableIntent 构造
         /// </summary>
         protected virtual ExecutableIntent? CreateExecutableIntent(
-            CharacterModule module,
+            CharacterStore store,
             int actionId,
             CommandTransitionInfo info,
             ChActionConfig config,
@@ -92,7 +92,7 @@ namespace GameLogic
         {
             return new ExecutableIntent
             {
-                InstanceId = module.InstanceId,
+                InstanceId = store.InstanceId,
                 ActionId = actionId,
                 ActionName = info.actionName,
                 Priority = config.Priority,

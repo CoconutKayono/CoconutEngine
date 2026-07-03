@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using TEngine;
 using UnityEngine;
 
@@ -12,9 +12,8 @@ namespace GameLogic
     {
         public InteractService() : base(EIntentAction.Interact) { }
 
-        protected override bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
-            // 只处理交互类型的动作
             return config.ActionType == EActionType.None;
         }
     }

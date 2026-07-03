@@ -1,4 +1,4 @@
-using TEngine;
+﻿using TEngine;
 using UnityEngine;
 
 namespace GameLogic
@@ -17,10 +17,10 @@ namespace GameLogic
 
         private void OnHitRequest(HitRequestEvent evt)
         {
-            var attackerModule = CharacterManager.Instance.GetUnit(evt.AttackerId);
-            if (attackerModule == null) return;
+            var attackerStore = CharacterModule.Instance.GetUnit(evt.AttackerId);
+            if (attackerStore == null) return;
 
-            var attackerStats = attackerModule.CharacterAttributes;
+            var attackerStats = attackerStore.ChAttribute;
             if (!attackerStats.IsAlive) return;
 
             float energyGain = 10f;

@@ -6,13 +6,13 @@ namespace GameLogic
     public class RootMotionService : IRootMotionService
     {
         #region States
-        private CharacterModule _characterModule;
+        private CharacterStore _characterStore;
         #endregion
 
         #region Constructor
-        public RootMotionService(CharacterModule characterModule)
+        public RootMotionService(CharacterStore characterStore)
         {
-            _characterModule = characterModule;
+            _characterStore = characterStore;
         }
         #endregion
 
@@ -20,18 +20,18 @@ namespace GameLogic
 
         public void OnAnimatorMove()
         {
-            if (_characterModule == null)
+            if (_characterStore == null)
             {
-                Log.Warning("[RootMotionService] CharacterModule 为空，跳过根运动");
+                Log.Warning("[RootMotionService] CharacterStore 为空，跳过根运动");
                 return;
             }
 
-            var animator = _characterModule.Animator;
-            var ownerTransform = _characterModule.Owner;
+            var animator = _characterStore.Animator;
+            var ownerTransform = _characterStore.Owner;
 
             if (animator == null || ownerTransform == null)
             {
-                Log.Warning($"[RootMotionService] Animator 或 Owner 为空，跳过根运动。InstanceId: {_characterModule.InstanceId}");
+                Log.Warning($"[RootMotionService] Animator 或 Owner 为空，跳过根运动。InstanceId: {_characterStore.InstanceId}");
                 return;
             }
 
@@ -41,7 +41,7 @@ namespace GameLogic
 
         public void Dispose()
         {
-            _characterModule = null;
+            _characterStore = null;
         }
 
         #endregion

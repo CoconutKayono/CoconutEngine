@@ -22,11 +22,11 @@ namespace GameLogic
     public struct IntentEvent
     {
         public int InstanceId;
-        public EIntentAction Action;      // 枚举：Move, Attack, Dodge...
-        public EInputPhase Phase;  // Down, Press, Up
+        public EIntentAction Action;      // 意图类型：Move, Attack, Dodge...
+        public EInputPhase Phase;         // 输入相位：Down, Press, Up
         public float HoldTime;            // 按住时长（秒）
-        public Vector2 Direction;         // 仅 Move 使用
-        public EChainDirection ChainDir;   // 仅 Chain 使用
+        public Vector2 Direction;         // 世界空间方向（主要用于 Move/Sprint/Dodge 等）
+        public EChainDirection ChainDir;  // 链招方向（仅 Chain 使用）
     }
 
     public struct FinalIntentEvent
@@ -45,5 +45,7 @@ namespace GameLogic
         public float DecibelCost;
         public float ChainGaugeCost;
         public float DodgeStaminaCost;
+
+
     }
 }

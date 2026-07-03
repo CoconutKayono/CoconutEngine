@@ -6,23 +6,24 @@ using UnityEngine;
 namespace GameLogic
 {
     /// <summary>
-    /// 后闪服务 — 无方向闪避
+    /// 转身服务 — 处理转身意图（LogicType = TurnBack）
     /// </summary>
-    public class BackDodgeService : DecisionServiceBase
+    public class TurnBackService : DecisionServiceBase
     {
-        public BackDodgeService() : base(EIntentAction.Dodge) { }
+        public TurnBackService() : base(EIntentAction.Move) { }
 
         protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
-            if (config.ActionType != EActionType.DodgeBackward) return false;
-            if (intent.Direction.sqrMagnitude >= 0.01f) return false;
+            if (config.ActionType != EActionType.TurnBack) return false;
 
-            if (store.ChAttribute.CurrentDodgeStamina < config.DodgeStaminaCost)
-            {
-                Log.Debug($"[BackDodgeService] 闪避体力不足！当前: {store.ChAttribute.CurrentDodgeStamina}, 需要: {config.DodgeStaminaCost}");
-                return false;
-            }
-            return true;
+            var state = store.ChState;
+            if (state == null || !state.IsMoving) return false;
+
+            Vector2 worldDir = intent.Direction;
+            float angle = Vector2.Angle(state.LastInputDirection, worldDir);
+            float threshold = store.TurnThreshold;
+
+            return angle > threshold;
         }
 
         protected override ExecutableIntent? CreateExecutableIntent(
@@ -32,6 +33,9 @@ namespace GameLogic
             ChActionConfig config,
             IntentEvent intent)
         {
+            Vector2 worldDir = intent.Direction;
+            if (worldDir.sqrMagnitude < 0.001f) return null;
+
             return new ExecutableIntent
             {
                 InstanceId = store.InstanceId,
@@ -40,9 +44,8 @@ namespace GameLogic
                 Priority = config.Priority,
                 Phase = intent.Phase,
                 HoldTime = intent.HoldTime,
-                Direction = intent.Direction,
+                Direction = worldDir,
                 ChainDir = intent.ChainDir,
-                DodgeStaminaCost = config.DodgeStaminaCost,
             };
         }
     }

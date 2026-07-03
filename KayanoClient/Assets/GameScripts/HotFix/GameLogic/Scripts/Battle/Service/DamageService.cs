@@ -1,4 +1,4 @@
-using TEngine;
+﻿using TEngine;
 using UnityEngine;
 
 namespace GameLogic
@@ -19,18 +19,18 @@ namespace GameLogic
         private void OnHitRequest(HitRequestEvent evt)
         {
             // 1. 获取攻击者/受击者模块
-            var attackerModule = CharacterManager.Instance.GetUnit(evt.AttackerId);
-            var defenderModule = CharacterManager.Instance.GetUnit(evt.TargetId);
-            if (attackerModule == null || defenderModule == null) return;
+            var attackerStore = CharacterModule.Instance.GetUnit(evt.AttackerId);
+            var defenderStore = CharacterModule.Instance.GetUnit(evt.TargetId);
+            if (attackerStore == null || defenderStore == null) return;
 
-            var attackerStats = attackerModule.CharacterAttributes;
-            var defenderStats = defenderModule.CharacterAttributes;
+            var attackerStats = attackerStore.ChAttribute;
+            var defenderStats = defenderStore.ChAttribute;
 
             // 2. 检查受击者是否存活
             if (!defenderStats.IsAlive) return;
 
             // 3. 判断是否处于失衡状态
-            bool isEnemyStunned = BattleModule.Instance.IsEnemyStunned(evt.TargetId);
+            bool isEnemyStunned = BattleModule.Instance.Store.IsEnemyStunned(evt.TargetId);
 
             // 4. 获取招式配置
             var hitConfig = HitHelper.GetHitConfig(evt.BoxData.HitId);
@@ -70,8 +70,8 @@ namespace GameLogic
                 {
                     AttackerId = evt.AttackerId,
                     TargetId = evt.TargetId,
-                    DeathPoint = defenderModule.Owner.transform.position,
-                    UnitType = defenderModule.UnitType,
+                    DeathPoint = defenderStore.Owner.transform.position,
+                    UnitType = defenderStore.UnitType,
                 });
             }
         }

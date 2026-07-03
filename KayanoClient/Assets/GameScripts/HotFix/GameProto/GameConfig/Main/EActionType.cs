@@ -97,6 +97,8 @@ namespace GameConfig.Main
         /// 失衡后触发的连携攻击
         /// </summary>
         ChainAttack = 601,
+        SwitchIn = 700,
+        SwitchOut = 701,
     }
 
 } 

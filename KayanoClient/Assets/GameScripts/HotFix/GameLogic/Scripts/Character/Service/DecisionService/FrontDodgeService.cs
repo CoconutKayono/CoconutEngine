@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using KayanoAction.Runtime;
 using TEngine;
 using UnityEngine;
@@ -12,21 +12,21 @@ namespace GameLogic
     {
         public FrontDodgeService() : base(EIntentAction.Dodge) { }
 
-        protected override bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
             if (config.ActionType != EActionType.DodgeForward) return false;
             if (intent.Direction.sqrMagnitude < 0.01f) return false;
 
-            if (module.CharacterAttributes.CurrentDodgeStamina < config.DodgeStaminaCost)
+            if (store.ChAttribute.CurrentDodgeStamina < config.DodgeStaminaCost)
             {
-                Log.Debug($"[FrontDodgeService] 闪避体力不足！当前: {module.CharacterAttributes.CurrentDodgeStamina}, 需要: {config.DodgeStaminaCost}");
+                Log.Debug($"[FrontDodgeService] 闪避体力不足！当前: {store.ChAttribute.CurrentDodgeStamina}, 需要: {config.DodgeStaminaCost}");
                 return false;
             }
             return true;
         }
 
         protected override ExecutableIntent? CreateExecutableIntent(
-            CharacterModule module,
+            CharacterStore store,
             int actionId,
             CommandTransitionInfo info,
             ChActionConfig config,
@@ -34,7 +34,7 @@ namespace GameLogic
         {
             return new ExecutableIntent
             {
-                InstanceId = module.InstanceId,
+                InstanceId = store.InstanceId,
                 ActionId = actionId,
                 ActionName = info.actionName,
                 Priority = config.Priority,

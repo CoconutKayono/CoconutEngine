@@ -11,8 +11,8 @@ namespace GameLogic
     public class TimelineActionService
     {
         #region States
-        private CharacterModule _characterModule;
-        private ActionStateModel _actionState;
+        private CharacterStore _characterStore;
+        private ChActionModel _actionState;
         private TimelineActionSO _currentAction;
 
         private float _time;
@@ -30,10 +30,10 @@ namespace GameLogic
         #endregion
 
         #region Constructor
-        public TimelineActionService(CharacterModule characterModule)
+        public TimelineActionService(CharacterStore characterStore)
         {
-            _characterModule = characterModule;
-            _actionState = characterModule.ActionState;
+            _characterStore = characterStore;
+            _actionState = characterStore.ChActionState;
             _currentAction = _actionState.CurrentAction;
         }
         #endregion
@@ -160,7 +160,7 @@ namespace GameLogic
 
             RefreshOpenTransitions(); // 解决首帧空窗问题
 
-            var animator = _characterModule.Animator;
+            var animator = _characterStore.Animator;
             if (animator != null)
             {
                 animator.CrossFadeInFixedTime(actionName, fadeDuration);
@@ -174,7 +174,7 @@ namespace GameLogic
         public void Dispose()
         {
             EndAllRunningStates();
-            _characterModule = null;
+            _characterStore = null;
             _actionState = null;
             _currentAction = null;
         }
@@ -232,10 +232,10 @@ namespace GameLogic
         {
             return new ActionTimelineContext
             {
-                ConfigId = _characterModule.CharacterAttributes.ConfigId,
-                Owner = _characterModule.Owner,
+                ConfigId = _characterStore.ChAttribute.ConfigId,
+                Owner = _characterStore.Owner,
                 ActionId = _currentAction?.actionId ?? 0,
-                InstanceId = _characterModule.InstanceId
+                InstanceId = _characterStore.InstanceId
             };
         }
 

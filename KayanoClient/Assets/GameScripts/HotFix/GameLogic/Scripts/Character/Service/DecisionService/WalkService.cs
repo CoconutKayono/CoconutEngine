@@ -6,23 +6,15 @@ using UnityEngine;
 namespace GameLogic
 {
     /// <summary>
-    /// 后闪服务 — 无方向闪避
+    /// 行走服务 — 处理普通行走意图
     /// </summary>
-    public class BackDodgeService : DecisionServiceBase
+    public class WalkService : DecisionServiceBase
     {
-        public BackDodgeService() : base(EIntentAction.Dodge) { }
+        public WalkService() : base(EIntentAction.Move) { }
 
         protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
-            if (config.ActionType != EActionType.DodgeBackward) return false;
-            if (intent.Direction.sqrMagnitude >= 0.01f) return false;
-
-            if (store.ChAttribute.CurrentDodgeStamina < config.DodgeStaminaCost)
-            {
-                Log.Debug($"[BackDodgeService] 闪避体力不足！当前: {store.ChAttribute.CurrentDodgeStamina}, 需要: {config.DodgeStaminaCost}");
-                return false;
-            }
-            return true;
+            return config.ActionType == EActionType.Walk;
         }
 
         protected override ExecutableIntent? CreateExecutableIntent(
@@ -32,6 +24,9 @@ namespace GameLogic
             ChActionConfig config,
             IntentEvent intent)
         {
+            Vector2 worldDir = intent.Direction;
+            if (worldDir.sqrMagnitude < 0.001f) return null;
+
             return new ExecutableIntent
             {
                 InstanceId = store.InstanceId,
@@ -40,9 +35,8 @@ namespace GameLogic
                 Priority = config.Priority,
                 Phase = intent.Phase,
                 HoldTime = intent.HoldTime,
-                Direction = intent.Direction,
+                Direction = worldDir,
                 ChainDir = intent.ChainDir,
-                DodgeStaminaCost = config.DodgeStaminaCost,
             };
         }
     }

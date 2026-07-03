@@ -4,6 +4,6 @@ namespace GameLogic
 {
     public interface IRotationService
     {
-       public void RotateTowards(Camera camera);
+       public void RotateTowards();
     }
 }
