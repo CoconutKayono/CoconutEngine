@@ -6,20 +6,20 @@ namespace GameLogic
     public class PlayerInputHandler : IActionInputHandler
     {
         #region States
-        private CharacterModule _characterModule;
-        private CharacterAttributeModel _characterAttributes;
-        private ActionStateModel _actionState;
+        private CharacterStore _characterStore;
+        private ChAttributeModel _characterAttributes;
+        private ChActionModel _actionState;
         private int _instanceId;
         private InputBufferModel _buffer;
         #endregion
 
         #region Constructor
-        public PlayerInputHandler(CharacterModule characterModule)
+        public PlayerInputHandler(CharacterStore characterStore)
         {
-            _characterModule = characterModule;
-            _characterAttributes = characterModule.CharacterAttributes;
-            _actionState = characterModule.ActionState;
-            _instanceId = characterModule.InstanceId;
+            _characterStore = characterStore;
+            _characterAttributes = characterStore.ChAttribute;
+            _actionState = characterStore.ChActionState;
+            _instanceId = characterStore.InstanceId;
             _buffer = InputModule.Instance.Buffer;
         }
         #endregion
@@ -31,21 +31,21 @@ namespace GameLogic
 
             var input = InputModule.Instance.Input;
 
-            // 离散按键：Down / Press / Up 统一从缓冲消费（支持提前输入 + 不同 Phase 触发）
             while (_buffer.Pop(out var entry))
             {
                 PublishBufferEntry(entry);
             }
 
-            // 连续输入：仅读实时快照
+            // 实时输入
             if (input.IsMovePress)
             {
+                Vector2 worldDir = MoveHelper.GetWorldDirection(input.Move);
                 GameEvent.Get<IActionIntentEvents>().OnMoveIntent(new()
                 {
                     InstanceId = _instanceId,
                     Action = EIntentAction.Move,
                     Phase = EInputPhase.Press,
-                    Direction = input.Move,
+                    Direction = worldDir,
                 });
             }
 
@@ -60,7 +60,6 @@ namespace GameLogic
                 });
             }
 
-            // 保底意图：每帧都发，由决策层以低优先级仲裁
             GameEvent.Get<IActionIntentEvents>().OnNoneIntent(new()
             {
                 InstanceId = _instanceId,
@@ -72,6 +71,9 @@ namespace GameLogic
         private void PublishBufferEntry(InputBufferModel.Entry entry)
         {
             var intentEvent = entry.ToIntentEvent(_instanceId);
+
+            Vector2 worldDir = MoveHelper.GetWorldDirection(intentEvent.Direction);
+            intentEvent.Direction = worldDir;
 
             switch (entry.Action)
             {
@@ -93,12 +95,18 @@ namespace GameLogic
                 case EIntentAction.Chain:
                     GameEvent.Get<IActionIntentEvents>().OnChainIntent(intentEvent);
                     break;
+                case EIntentAction.Move:
+                    GameEvent.Get<IActionIntentEvents>().OnMoveIntent(intentEvent);
+                    break;
+                case EIntentAction.Sprint:
+                    GameEvent.Get<IActionIntentEvents>().OnSprintIntent(intentEvent);
+                    break;
             }
         }
 
         public void Dispose()
         {
-            _characterModule = null;
+            _characterStore = null;
             _characterAttributes = null;
             _actionState = null;
         }

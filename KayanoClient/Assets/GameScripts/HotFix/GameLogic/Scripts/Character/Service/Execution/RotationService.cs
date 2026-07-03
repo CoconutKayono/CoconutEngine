@@ -1,4 +1,4 @@
-using Fantasy;
+using TEngine;
 using UnityEngine;
 
 namespace GameLogic
@@ -6,44 +6,56 @@ namespace GameLogic
     public class RotationService : IRotationService
     {
         #region States
-        private CharacterModule _characterModule;
+        private CharacterStore _characterStore;
+        private float _rotationSpeed = 360f;
         #endregion
-        public RotationService(CharacterModule characterModule, InputModule inputModule)
-        {
-            _characterModule = characterModule;
-        }
 
-        public void RotateTowards(Camera camera)
+        #region Constructor
+        public RotationService(CharacterStore characterStore)
         {
-            if (camera == null || _characterModule?.Owner == null)
+            _characterStore = characterStore;
+            _rotationSpeed = characterStore.RotationSpeed;
+        }
+        #endregion
+
+        #region Actions
+
+        public void RotateTowards()
+        {
+            if (_characterStore?.Owner == null)
             {
-                Log.Warning("[RotationService] 依赖为空");
+                Log.Warning("[RotationService] 依赖为空，跳过旋转");
                 return;
             }
 
-            Vector2 input = InputModule.Instance.Input.Move;
-            if (input.sqrMagnitude < 0.001f) return;
+            var currentAction = _characterStore.ChActionState.CurrentAction;
+            if (currentAction == null || !currentAction.enableRotation)
+            {
+                return;
+            }
 
-            Transform cam = camera.transform;
-            Vector3 forward = cam.forward;
-            Vector3 right = cam.right;
+            var state = _characterStore.ChState;
+            Vector2 moveDir = state.MoveDirection;
+            if (moveDir.sqrMagnitude < 0.001f) return;
 
-            forward.y = 0f;
-            right.y = 0f;
-
-            forward.Normalize();
-            right.Normalize();
-
-            Vector3 worldDir = (forward * input.y) + (right * input.x);
-
+            var owner = _characterStore.Owner;
+            Vector3 worldDir = new Vector3(moveDir.x, 0, moveDir.y);
             var targetRotation = Quaternion.LookRotation(worldDir);
-            var rotateSpeed = _characterModule.CharacterState.RotationSpeed;
 
-            _characterModule.Owner.rotation = Quaternion.RotateTowards(
-            _characterModule.Owner.rotation,
-            targetRotation,
-            rotateSpeed * Time.deltaTime 
+            owner.rotation = Quaternion.RotateTowards(
+                owner.rotation,
+                targetRotation,
+                _rotationSpeed * Time.deltaTime
             );
         }
+
+        #endregion
+
+        #region Dispose
+        public void Dispose()
+        {
+            _characterStore = null;
+        }
+        #endregion
     }
 }

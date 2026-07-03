@@ -26,8 +26,8 @@ namespace GameLogic
         /// <param name="dazeMult">招式失衡系数</param>
         /// <param name="isEnemyStunned">敌人是否处于失衡状态</param>
         public static DamageResult CalculateHitResult(
-            CharacterAttributeModel attacker,
-            CharacterAttributeModel defender,
+            ChAttributeModel attacker,
+            ChAttributeModel defender,
             float damageMult,
             float dazeMult,
             bool isEnemyStunned)

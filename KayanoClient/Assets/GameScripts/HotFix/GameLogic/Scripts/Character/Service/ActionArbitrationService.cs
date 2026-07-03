@@ -10,15 +10,15 @@ namespace GameLogic
     public class ActionArbitrationService
     {
         #region States
-        private CharacterModule _characterModule;
-        private ActionStateModel _actionState;
+        private CharacterStore _characterStore;
+        private ChActionModel _actionState;
         #endregion
 
         #region Constructor
-        public ActionArbitrationService(CharacterModule characterModule)
+        public ActionArbitrationService(CharacterStore characterStore)
         {
-            _characterModule = characterModule;
-            _actionState = characterModule.ActionState;
+            _characterStore = characterStore;
+            _actionState = characterStore.ChActionState;
         }
         #endregion
 
@@ -79,7 +79,7 @@ namespace GameLogic
 
         public void Dispose()
         {
-            _characterModule = null;
+            _characterStore = null;
             _actionState = null;
         }
     }

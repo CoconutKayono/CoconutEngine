@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using TEngine;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ namespace GameLogic
     {
         public NormalAttackService() : base(EIntentAction.Attack) { }
 
-        protected override bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
             return config.ActionType == EActionType.NormalAttack;
         }

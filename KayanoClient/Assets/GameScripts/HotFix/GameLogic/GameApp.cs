@@ -35,6 +35,8 @@ public partial class GameApp
     private static void StartGameLogic()
     {
         _ = GameModule.NetworkModule;
+        _ = CharacterModule.Instance;
+        _ = BattleModule.Instance;
         Log.Info("[GameApp] GameLogic 已启动");
     }
 

@@ -1,4 +1,4 @@
-using GameConfig.Main;
+﻿using GameConfig.Main;
 using KayanoAction.Runtime;
 using TEngine;
 using UnityEngine;
@@ -12,13 +12,11 @@ namespace GameLogic
     {
         public UltimateService() : base(EIntentAction.Ultimate) { }
 
-        protected override bool CheckCondition(CharacterModule module, ChActionConfig config, IntentEvent intent)
+        protected override bool CheckCondition(CharacterStore store, ChActionConfig config, IntentEvent intent)
         {
-            // 1. 只处理 Ultimate 类型
             if (config.ActionType != EActionType.Ultimate) return false;
 
-            // 2. 检查喧响值是否满
-            var characterAttributes = module.CharacterAttributes;
+            var characterAttributes = store.ChAttribute;
             if (characterAttributes.CurrentDecibels < characterAttributes.MaxDecibels)
             {
                 Log.Debug($"[UltimateService] 喧响值不足！当前: {characterAttributes.CurrentDecibels}, 需要: {characterAttributes.MaxDecibels}");
@@ -28,16 +26,16 @@ namespace GameLogic
         }
 
         protected override ExecutableIntent? CreateExecutableIntent(
-            CharacterModule module,
+            CharacterStore store,
             int actionId,
             CommandTransitionInfo info,
             ChActionConfig config,
             IntentEvent intent)
         {
-            var characterAttributes = module.CharacterAttributes;
+            var characterAttributes = store.ChAttribute;
             return new ExecutableIntent
             {
-                InstanceId = module.InstanceId,
+                InstanceId = store.InstanceId,
                 ActionId = actionId,
                 ActionName = info.actionName,
                 Priority = config.Priority,

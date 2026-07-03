@@ -1,4 +1,4 @@
-using TEngine;
+﻿using TEngine;
 using UnityEngine;
 
 namespace GameLogic
@@ -17,10 +17,10 @@ namespace GameLogic
 
         private void OnHitRequest(HitRequestEvent evt)
         {
-            var defenderModule = CharacterManager.Instance.GetUnit(evt.TargetId);
-            if (defenderModule == null) return;
+            var defenderStore = CharacterModule.Instance.GetUnit(evt.TargetId);
+            if (defenderStore == null) return;
 
-            var defenderStats = defenderModule.CharacterAttributes;
+            var defenderStats = defenderStore.ChAttribute;
             if (!defenderStats.IsAlive) return;
 
             // 获取招式配置中的失衡系数
@@ -28,7 +28,7 @@ namespace GameLogic
             float stunValue = defenderStats.GetAttr(400) * hitConfig.DazeMult; // 冲击力 * 失衡系数
 
             // 累加失衡值
-            BattleModule.Instance.AddStunValue(evt.TargetId, stunValue);
+            BattleModule.Instance.Store.AddStunValue(evt.TargetId, stunValue);
         }
     }
 }

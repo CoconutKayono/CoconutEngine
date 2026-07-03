@@ -10,14 +10,14 @@ namespace GameLogic
     {
         #region States
         private TimelineActionService _timelineAction;
-        private CharacterModule _characterModule;
+        private CharacterStore _characterStore;
         #endregion
 
         #region Constructor
-        public TransitionService(TimelineActionService timelineAction, CharacterModule characterModule)
+        public TransitionService(TimelineActionService timelineAction, CharacterStore characterStore)
         {
             _timelineAction = timelineAction;
-            _characterModule = characterModule;
+            _characterStore = characterStore;
 
             GameEvent.AddEventListener<SignalTransitionEvent>(
                 IActionTimelineEvents_Event.OnSignalTransition,
@@ -37,7 +37,7 @@ namespace GameLogic
 
         public void OnSignalTriggered(SignalTransitionEvent signal)
         {
-            if (signal.Context.InstanceId != _characterModule.InstanceId)
+            if (signal.Context.InstanceId != _characterStore.InstanceId)
                 return;
 
             var targetSignalName = signal.TransitionInfo.signalName;
@@ -48,10 +48,10 @@ namespace GameLogic
             }
 
             // O(1) 获取特定信号的运行中窗口
-            var runningSignals = _characterModule.ActionState.GetRunningSignals(targetSignalName);
+            var runningSignals = _characterStore.ChActionState.GetRunningSignals(targetSignalName);
             if (runningSignals == null || runningSignals.Count == 0)
             {
-                Log.Debug($"[TransitionService] 角色 {_characterModule.InstanceId} 收到信号 {targetSignalName}，但无匹配通道");
+                Log.Debug($"[TransitionService] 角色 {_characterStore.InstanceId} 收到信号 {targetSignalName}，但无匹配通道");
                 return;
             }
 
@@ -65,7 +65,7 @@ namespace GameLogic
                     continue;
                 }
 
-                Log.Debug($"[TransitionService] 角色 {_characterModule.InstanceId} 信号 {targetSignalName} → 切换到动作: {signalInfo.actionName}");
+                Log.Debug($"[TransitionService] 角色 {_characterStore.InstanceId} 信号 {targetSignalName} → 切换到动作: {signalInfo.actionName}");
                 _timelineAction?.SwitchTo(signalInfo.actionName, signalInfo.fadeDuration);
                 return;
             }
@@ -73,9 +73,9 @@ namespace GameLogic
 
         public void OnEnterIntentTriggered(IntentTransitionEvent intent)
         {
-            if (intent.Context.InstanceId != _characterModule.InstanceId) return;
+            if (intent.Context.InstanceId != _characterStore.InstanceId) return;
 
-            _characterModule.ActionState.AddRunningCommand(
+            _characterStore.ChActionState.AddRunningCommand(
                 intent.TransitionInfo.command,
                 new RunningIntentContext
                 {
@@ -87,9 +87,9 @@ namespace GameLogic
 
         public void OnExitIntentTriggered(IntentTransitionEvent intent)
         {
-            if (intent.Context.InstanceId != _characterModule.InstanceId) return;
+            if (intent.Context.InstanceId != _characterStore.InstanceId) return;
 
-            _characterModule.ActionState.RemoveRunningCommand(
+            _characterStore.ChActionState.RemoveRunningCommand(
                 intent.TransitionInfo.command,
                 intent.StateInstanceId
             );
@@ -113,7 +113,7 @@ namespace GameLogic
                 OnExitIntentTriggered);
 
             _timelineAction = null;
-            _characterModule = null;
+            _characterStore = null;
         }
         #endregion
     }
